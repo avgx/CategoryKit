@@ -12,11 +12,9 @@
 
 // -------------------------------------------------------------------------------
 
-- (id) objectFromJSONData {
-    NSError *error = nil;
-    id object = [NSJSONSerialization JSONObjectWithData:self options:NSJSONReadingMutableContainers error:&error];
+- (id) objectFromJSONData:(NSError **) error {
+    id object = [NSJSONSerialization JSONObjectWithData:self options:NSJSONReadingMutableContainers error:error];
     if (error != nil) {
-        NSLog(@"%@", [error localizedDescription]);
         return nil;
     }
     return object;

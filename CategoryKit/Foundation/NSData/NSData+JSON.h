@@ -10,6 +10,6 @@
 
 @interface NSData (JSON)
 
-- (id) objectFromJSONData;
+- (id) objectFromJSONData:(NSError **) error;
 
 @end

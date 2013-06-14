@@ -2,8 +2,8 @@
 //  NSArray.m
 //  PickAndRoll
 //
-//  Created by Some man on 15.09.11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Denis Kotenko on 15.09.11.
+//  Copyright 2011 Ramotion. All rights reserved.
 //
 
 #import "NSArray+CKExtension.h"
@@ -69,9 +69,9 @@
     
     va_end(args);
     
-    if (!filter)
+    if (!filter) {
         return nil;
-    
+    }
     return [self filteredArrayUsingPredicate:filter];
 }
 

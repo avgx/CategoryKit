@@ -2,8 +2,8 @@
 //  NSArray.h
 //  PickAndRoll
 //
-//  Created by macuser on 15.09.11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Denis Kotenko on 15.09.11.
+//  Copyright 2011 Ramotion. All rights reserved.
 //
 
 @interface NSArray (CKExtension)
@@ -14,6 +14,6 @@
 - (NSArray *) subarrayToIndex:(NSInteger) index;
 - (NSArray *) subarrayFromIndex:(NSInteger) index;
 
-- (NSArray *) filteredArrayUsingPredicateWithFormat:(NSString*) format, ...;
+- (NSArray *) filteredArrayUsingPredicateWithFormat:(NSString *) format, ...;
 
 @end
