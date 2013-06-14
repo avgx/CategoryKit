@@ -10,7 +10,6 @@
 		04904453176B6B3A00E97C54 /* NSArray+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */; };
 		04904454176B6B3A00E97C54 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490441B176B6B3A00E97C54 /* NSData+AESCrypt.m */; };
 		04904455176B6B3A00E97C54 /* NSData+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490441D176B6B3A00E97C54 /* NSData+JSON.m */; };
-		04904456176B6B3A00E97C54 /* NSData+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490441F176B6B3A00E97C54 /* NSData+JSON.m */; };
 		04904457176B6B3A00E97C54 /* NSDate+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904422176B6B3A00E97C54 /* NSDate+CKExtension.m */; };
 		04904458176B6B3A00E97C54 /* NSDate+CKNetConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904424176B6B3A00E97C54 /* NSDate+CKNetConversion.m */; };
 		04904459176B6B3A00E97C54 /* NSDictionary+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904426176B6B3A00E97C54 /* NSDictionary+CKExtension.m */; };
@@ -53,8 +52,6 @@
 		0490441B176B6B3A00E97C54 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
 		0490441C176B6B3A00E97C54 /* NSData+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JSON.h"; sourceTree = "<group>"; };
 		0490441D176B6B3A00E97C54 /* NSData+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JSON.m"; sourceTree = "<group>"; };
-		0490441E176B6B3A00E97C54 /* NSData+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JSON.h"; sourceTree = "<group>"; };
-		0490441F176B6B3A00E97C54 /* NSData+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JSON.m"; sourceTree = "<group>"; };
 		04904421176B6B3A00E97C54 /* NSDate+CKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CKExtension.h"; sourceTree = "<group>"; };
 		04904422176B6B3A00E97C54 /* NSDate+CKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CKExtension.m"; sourceTree = "<group>"; };
 		04904423176B6B3A00E97C54 /* NSDate+CKNetConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CKNetConversion.h"; sourceTree = "<group>"; };
@@ -143,20 +140,18 @@
 		04904415176B6B3A00E97C54 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				04904419176B6B3A00E97C54 /* NSData */,
+				04904420176B6B3A00E97C54 /* NSDate */,
+				04904429176B6B3A00E97C54 /* NSNumber */,
+				0490442C176B6B3A00E97C54 /* NSObject */,
+				04904431176B6B3A00E97C54 /* NSString */,
 				04904416176B6B3A00E97C54 /* Foundation+Extension.h */,
 				04904417176B6B3A00E97C54 /* NSArray+CKExtension.h */,
 				04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */,
-				04904419176B6B3A00E97C54 /* NSData */,
-				0490441E176B6B3A00E97C54 /* NSData+JSON.h */,
-				0490441F176B6B3A00E97C54 /* NSData+JSON.m */,
-				04904420176B6B3A00E97C54 /* NSDate */,
 				04904425176B6B3A00E97C54 /* NSDictionary+CKExtension.h */,
 				04904426176B6B3A00E97C54 /* NSDictionary+CKExtension.m */,
 				04904427176B6B3A00E97C54 /* NSFileManager+CKExtension.h */,
 				04904428176B6B3A00E97C54 /* NSFileManager+CKExtension.m */,
-				04904429176B6B3A00E97C54 /* NSNumber */,
-				0490442C176B6B3A00E97C54 /* NSObject */,
-				04904431176B6B3A00E97C54 /* NSString */,
 				04904440176B6B3A00E97C54 /* NSTimer+CKBlocks.h */,
 				04904441176B6B3A00E97C54 /* NSTimer+CKBlocks.m */,
 				04904442176B6B3A00E97C54 /* NSURLConnection+Blocks.h */,
@@ -379,7 +374,6 @@
 				04904453176B6B3A00E97C54 /* NSArray+CKExtension.m in Sources */,
 				04904454176B6B3A00E97C54 /* NSData+AESCrypt.m in Sources */,
 				04904455176B6B3A00E97C54 /* NSData+JSON.m in Sources */,
-				04904456176B6B3A00E97C54 /* NSData+JSON.m in Sources */,
 				04904457176B6B3A00E97C54 /* NSDate+CKExtension.m in Sources */,
 				04904458176B6B3A00E97C54 /* NSDate+CKNetConversion.m in Sources */,
 				04904459176B6B3A00E97C54 /* NSDictionary+CKExtension.m in Sources */,
