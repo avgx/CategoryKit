@@ -2,7 +2,7 @@
 //  NSArray.m
 //  PickAndRoll
 //
-//  Created by macuser on 15.09.11.
+//  Created by Some man on 15.09.11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
