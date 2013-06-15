@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Ramotion. All rights reserved.
 //
 
-#import "NSData+JSON.h"
+#import "NSData+CKJSON.h"
 
-@implementation NSData (JSON)
+@implementation NSData (CKJSON)
 
 // -------------------------------------------------------------------------------
 

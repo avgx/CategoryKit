@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (JSON)
+@interface NSData (CKJSON)
 
 - (id) objectFromJSONData:(NSError **) error;
 

@@ -14,7 +14,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (AESCrypt)
+@interface NSData (CKAESCrypt)
 
 - (NSData *)AES256EncryptWithKey:(NSString *)key;
 - (NSData *)AES256DecryptWithKey:(NSString *)key;

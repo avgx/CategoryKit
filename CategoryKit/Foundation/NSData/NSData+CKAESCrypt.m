@@ -12,7 +12,7 @@
 //  Put together by Michael Sedlaczek, Gone Coding on 2011-02-22
 //
 
-#import "NSData+AESCrypt.h"
+#import "NSData+CKAESCrypt.h"
 #import <CommonCrypto/CommonCryptor.h>
 
 static char encodingTable[64] = 
@@ -23,7 +23,7 @@ static char encodingTable[64] =
    'w','x','y','z','0','1','2','3','4','5','6','7','8','9','+','/'
 };
 
-@implementation NSData (AESCrypt)
+@implementation NSData (CKAESCrypt)
 
 - (NSData *)AES256EncryptWithKey:(NSString *)key
 {
