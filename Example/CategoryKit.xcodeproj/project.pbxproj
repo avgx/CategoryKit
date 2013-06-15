@@ -24,7 +24,7 @@
 		04904463176B6B3A00E97C54 /* NSString+CKTimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490443D176B6B3A00E97C54 /* NSString+CKTimeInterval.m */; };
 		04904464176B6B3A00E97C54 /* NSString+CKSHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490443F176B6B3A00E97C54 /* NSString+CKSHA256.m */; };
 		04904465176B6B3A00E97C54 /* NSTimer+CKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904441176B6B3A00E97C54 /* NSTimer+CKBlocks.m */; };
-		04904466176B6B3A00E97C54 /* NSURLConnection+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904443176B6B3A00E97C54 /* NSURLConnection+Blocks.m */; };
+		04904466176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904443176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m */; };
 		04904467176B6B3A00E97C54 /* UIColor+CKEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904447176B6B3A00E97C54 /* UIColor+CKEqual.m */; };
 		04904468176B6B3A00E97C54 /* UIColor+CKExpanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904449176B6B3A00E97C54 /* UIColor+CKExpanded.m */; };
 		04904469176B6B3A00E97C54 /* UIDevice+CKHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490444B176B6B3A00E97C54 /* UIDevice+CKHardware.m */; };
@@ -79,8 +79,8 @@
 		0490443F176B6B3A00E97C54 /* NSString+CKSHA256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CKSHA256.m"; sourceTree = "<group>"; };
 		04904440176B6B3A00E97C54 /* NSTimer+CKBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CKBlocks.h"; sourceTree = "<group>"; };
 		04904441176B6B3A00E97C54 /* NSTimer+CKBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CKBlocks.m"; sourceTree = "<group>"; };
-		04904442176B6B3A00E97C54 /* NSURLConnection+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+Blocks.h"; sourceTree = "<group>"; };
-		04904443176B6B3A00E97C54 /* NSURLConnection+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+Blocks.m"; sourceTree = "<group>"; };
+		04904442176B6B3A00E97C54 /* NSURLConnection+CKBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+CKBlocks.h"; sourceTree = "<group>"; };
+		04904443176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+CKBlocks.m"; sourceTree = "<group>"; };
 		04904446176B6B3A00E97C54 /* UIColor+CKEqual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CKEqual.h"; sourceTree = "<group>"; };
 		04904447176B6B3A00E97C54 /* UIColor+CKEqual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CKEqual.m"; sourceTree = "<group>"; };
 		04904448176B6B3A00E97C54 /* UIColor+CKExpanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CKExpanded.h"; sourceTree = "<group>"; };
@@ -151,8 +151,8 @@
 				04904428176B6B3A00E97C54 /* NSFileManager+CKExtension.m */,
 				04904440176B6B3A00E97C54 /* NSTimer+CKBlocks.h */,
 				04904441176B6B3A00E97C54 /* NSTimer+CKBlocks.m */,
-				04904442176B6B3A00E97C54 /* NSURLConnection+Blocks.h */,
-				04904443176B6B3A00E97C54 /* NSURLConnection+Blocks.m */,
+				04904442176B6B3A00E97C54 /* NSURLConnection+CKBlocks.h */,
+				04904443176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -383,7 +383,7 @@
 				04904463176B6B3A00E97C54 /* NSString+CKTimeInterval.m in Sources */,
 				04904464176B6B3A00E97C54 /* NSString+CKSHA256.m in Sources */,
 				04904465176B6B3A00E97C54 /* NSTimer+CKBlocks.m in Sources */,
-				04904466176B6B3A00E97C54 /* NSURLConnection+Blocks.m in Sources */,
+				04904466176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m in Sources */,
 				04904467176B6B3A00E97C54 /* UIColor+CKEqual.m in Sources */,
 				04904468176B6B3A00E97C54 /* UIColor+CKExpanded.m in Sources */,
 				04904469176B6B3A00E97C54 /* UIDevice+CKHardware.m in Sources */,

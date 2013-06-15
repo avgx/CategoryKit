@@ -22,11 +22,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSURLConnection (Blocks)
+@interface NSURLConnection (CKBlocks)
 
 + (void)asyncRequest:(NSURLRequest *)request
              success:(void(^)(NSData *, NSURLResponse *))successBlock_
              failure:(void(^)(NSData *, NSError *))failureBlock_;
 
 @end
-

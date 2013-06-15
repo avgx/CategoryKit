@@ -20,9 +20,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "NSURLConnection+Blocks.h"
+#import "NSURLConnection+CKBlocks.h"
 
-@implementation NSURLConnection (Blocks)
+@implementation NSURLConnection (CKBlocks)
 
 // -----------------------------------------------------------------------------
 
