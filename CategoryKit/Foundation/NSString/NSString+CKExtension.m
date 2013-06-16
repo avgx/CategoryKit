@@ -24,21 +24,26 @@
 
 @implementation NSString (CKExtension)
 
+// -----------------------------------------------------------------------------
+
 - (NSString *)strip {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
 // -----------------------------------------------------------------------------
 
-- (BOOL)isBlank {
+- (BOOL)isEmpty {
     return ([@"" isEqualToString:[self strip]]);
 }
 
 // -----------------------------------------------------------------------------
 
-+ (BOOL)isBlank:(NSString *)s {
-    if (!s) return YES;
-    return [s isBlank];
++ (BOOL)isEmpty:(NSString *)s {
+    if (!s) {
+        return YES;
+    }
+    
+    return [s isEmpty];
 }
 
 // -----------------------------------------------------------------------------

@@ -30,24 +30,23 @@
 // -------------------------------------------------------------------------------
 
 - (NSString *) sha256 {
-    @try {
+    @try {        
+        const char *cKey=[self cStringUsingEncoding:NSASCIIStringEncoding];
+        if (cKey == NULL) {
+            [NSException raise:NSInternalInconsistencyException format:@"sha256 input string is incorrect"];
+        }
+            
+        NSData *keyData=[NSData dataWithBytes:cKey length:strlen(cKey)];
         
-    const char *cKey=[self cStringUsingEncoding:NSASCIIStringEncoding];
-    if (cKey == NULL) {
-        [NSException raise:NSInternalInconsistencyException format:@"sha256 input string is incorrect"];
-    }
+        uint8_t digest[CC_SHA256_DIGEST_LENGTH]={0};
         
-    NSData *keyData=[NSData dataWithBytes:cKey length:strlen(cKey)];
-    
-    uint8_t digest[CC_SHA256_DIGEST_LENGTH]={0};
-    
-    CC_SHA256(keyData.bytes, keyData.length, digest);
-    NSData *out=[NSData dataWithBytes:digest length:CC_SHA256_DIGEST_LENGTH];
-    NSString *hash=[out description];
-    hash = [hash stringByReplacingOccurrencesOfString:@" " withString:@""];
-    hash = [hash stringByReplacingOccurrencesOfString:@"<" withString:@""];
-    hash = [hash stringByReplacingOccurrencesOfString:@">" withString:@""];
-    return hash;
+        CC_SHA256(keyData.bytes, keyData.length, digest);
+        NSData *out=[NSData dataWithBytes:digest length:CC_SHA256_DIGEST_LENGTH];
+        NSString *hash=[out description];
+        hash = [hash stringByReplacingOccurrencesOfString:@" " withString:@""];
+        hash = [hash stringByReplacingOccurrencesOfString:@"<" withString:@""];
+        hash = [hash stringByReplacingOccurrencesOfString:@">" withString:@""];
+        return hash;
     }
     @catch (NSException *exception) {
         return [[NSProcessInfo processInfo] globallyUniqueString];

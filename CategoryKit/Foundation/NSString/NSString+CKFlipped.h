@@ -24,6 +24,11 @@
 
 @interface NSString (CKFlipped)
 
+/*!
+ Allows to flips string upsidedown (only english letter are supported)
+ 
+ @result flipped string 
+ */
 - (NSString *) flipped;
 
 @end

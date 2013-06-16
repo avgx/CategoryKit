@@ -26,6 +26,8 @@
 
 #define CKIntervalLocalize(key, defaultValue) NSLocalizedStringWithDefaultValue(key, tableName, bundle, defaultValue, nil)
 
+// -----------------------------------------------------------------------------
+
 + (NSString *)stringForTimeInterval:(NSTimeInterval)interval includeSeconds:(BOOL)includeSeconds {
 	return [self localizedStringForTimeInterval:interval includeSeconds:includeSeconds tableName:nil bundle:[NSBundle mainBundle]];
 }

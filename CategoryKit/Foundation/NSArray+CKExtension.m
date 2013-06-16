@@ -40,7 +40,10 @@
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
     for (int i = aRange.location; i < aRange.location + aRange.length; i++) {
-        if (i >= [self count]) break;
+        if (i >= [self count]) {
+            break;
+        }
+        
         [result addObject:[self objectAtIndex:i]];
     }
     
@@ -53,7 +56,10 @@
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
     for (int i = 0; i < index; i++) {
-        if (i >= [self count]) break;
+        if (i >= [self count]) {
+            break;
+        }
+        
         [result addObject:[self objectAtIndex:i]];
     }
     
@@ -66,7 +72,10 @@
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
     for (int i = index; i < [self count]; i++) {
-        if (i >= [self count]) break;
+        if (i >= [self count]) {
+            break;
+        }
+        
         [result addObject:[self objectAtIndex:i]];
     }
     
@@ -86,6 +95,7 @@
     if (!filter) {
         return nil;
     }
+    
     return [self filteredArrayUsingPredicate:filter];
 }
 

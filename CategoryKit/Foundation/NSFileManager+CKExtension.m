@@ -25,13 +25,16 @@
 
 @implementation NSFileManager (CKExtension)
 
+// -----------------------------------------------------------------------------
+
 + (NSNumber *)fileSize:(NSString *)filePath error:(NSError **)error {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isDir;
     if ([fileManager fileExistsAtPath:filePath isDirectory:&isDir] && !isDir) {
         NSDictionary *fileAttributes = [fileManager attributesOfItemAtPath:filePath error:error];
-        if (fileAttributes)
+        if (fileAttributes) {
             return [fileAttributes objectForKey:NSFileSize];
+        }
     }
     return nil;
 }
@@ -53,10 +56,14 @@
 
 + (NSString *)temporaryFile:(NSString *)appendPath deleteIfExists:(BOOL)deleteIfExists error:(NSError **)error {
     NSString *tmpFile = NSTemporaryDirectory();
-	if (appendPath) tmpFile = [tmpFile stringByAppendingPathComponent:appendPath];
+	if (appendPath) {
+        tmpFile = [tmpFile stringByAppendingPathComponent:appendPath];
+    }
+    
     if (deleteIfExists && [self exist:tmpFile]) {
         [[NSFileManager defaultManager] removeItemAtPath:tmpFile error:error];
     }
+    
     return tmpFile;
 }
 
@@ -65,15 +72,22 @@
 + (BOOL)ensureDirectoryExists:(NSString *)directory created:(BOOL *)created error:(NSError **)error {
 	if (![self exist:directory]) {
 		BOOL success = [[NSFileManager defaultManager] createDirectoryAtPath:directory withIntermediateDirectories:YES attributes:nil error:error];
-		if (success && created) *created = YES;
+		if (success && created) {
+            *created = YES;
+        }
+        
 		return success;
-	} else if (![self isDirectory:directory]) {
-		if (error) *error = [NSError errorWithDomain:@"CKErrorDomain" code:-1 userInfo:@{NSLocalizedDescriptionKey : NSLocalizedString(@"Path exists but is not a directory", nil)}];
-		return NO;
-	} else {
-		// Path existed and was a directory
-		return YES;
 	}
+    else if (![self isDirectory:directory]) {
+		if (error) {
+            NSDictionary *info = @{NSLocalizedDescriptionKey : NSLocalizedString(@"Path exists but is not a directory", nil)};
+            *error = [NSError errorWithDomain:@"CKErrorDomain" code:-1 userInfo:info];
+        }
+        
+		return NO;
+	}
+    
+    return YES;
 }
 
 // -----------------------------------------------------------------------------
@@ -84,18 +98,28 @@
     NSString *prefixPath = nil, *pathExtension = nil;
     
     while([self exist:uniquePath]) {
-        if (!prefixPath) prefixPath = [path stringByDeletingPathExtension];
-        if (!pathExtension) pathExtension = [path fullPathExtension];
+        if (!prefixPath) {
+            prefixPath = [path stringByDeletingPathExtension];
+        }
+        
+        if (!pathExtension) {
+            pathExtension = [path fullPathExtension];
+        }
+        
         uniquePath = [NSString stringWithFormat:@"%@-%d%@", prefixPath, index, pathExtension];
         index++;
     }
+    
     return uniquePath;
 }
 
 // -----------------------------------------------------------------------------
 
 + (NSString *)pathToResource:(NSString *)path {
-    if (!path) return nil;
+    if (!path) {
+        return nil;
+    }
+    
     return [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:path];
 }
 

@@ -26,16 +26,20 @@
     
     if (value < byteTest) {
         return [NSString stringWithFormat:@"%.0f%@B", value, delimiter];
-    } else if (value < kilobyteTest) {
+    }
+    else if (value < kilobyteTest) {
         double d = value / byteTest;
         return [NSString stringWithFormat:@"%.0f%@KB", d, delimiter];
-    } else if (value < megaByteTest) {
+    }
+    else if (value < megaByteTest) {
         double d = value / kilobyteTest;
         return [NSString stringWithFormat:@"%.1f%@MB", d, delimiter];
-    } else {
+    }
+    else {
 		double d = value / megaByteTest;
 		return [NSString stringWithFormat:@"%.2f%@GB", d, delimiter];
     }
+    
     return nil;
 }
 

@@ -25,9 +25,9 @@
 
 @implementation NSString (CKAESCrypt)
 
+// -----------------------------------------------------------------------------
 
-- (NSString *)AES256EncryptWithKeyAndBase64:(NSString *)key
-{
+- (NSString *)AES256EncryptWithKeyAndBase64:(NSString *)key {
     NSData *plainData = [self dataUsingEncoding:NSUTF8StringEncoding];
     
     NSString * base64String = [plainData base64Encoding];
@@ -41,8 +41,9 @@
     return encryptedString;
 }
 
-- (NSString *)AES256EncryptWithKey:(NSString *)key
-{
+// -----------------------------------------------------------------------------
+
+- (NSString *)AES256EncryptWithKey:(NSString *)key {
     NSData *plainData = [self dataUsingEncoding:NSUTF8StringEncoding];
     NSData *encryptedData = [plainData AES256EncryptWithKey:key];
 
@@ -51,8 +52,9 @@
     return encryptedString;
 }
 
-- (NSString *)AES256DecryptWithKey:(NSString *)key
-{
+// -----------------------------------------------------------------------------
+
+- (NSString *)AES256DecryptWithKey:(NSString *)key {
     NSData *encryptedData = [NSData dataWithBase64EncodedString:self];
     NSData *plainData = [encryptedData AES256DecryptWithKey:key];
 
@@ -61,8 +63,9 @@
     return plainString;
 }
 
-- (NSString *)AES256DecryptWithKeywithBase64:(NSString *)key
-{
+// -----------------------------------------------------------------------------
+
+- (NSString *)AES256DecryptWithKeywithBase64:(NSString *)key {
     NSData *encryptedData = [NSData dataWithBase64EncodedString:self];
     
     NSData *plainData = [encryptedData AES256DecryptWithKey:key];
@@ -76,5 +79,6 @@
     return plainString;
 }
 
+// -----------------------------------------------------------------------------
 
 @end

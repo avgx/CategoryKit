@@ -53,7 +53,7 @@
  @param s String
  @result YES if string is nil, empty or whitespace characters
  */
-+ (BOOL)isBlank:(NSString *)s;
++ (BOOL)isEmpty:(NSString *)s;
 
 /*!
  Check if string contains ANY characters from a string.
