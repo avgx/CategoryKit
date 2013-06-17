@@ -7,7 +7,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Lisovoy Ivan, Denis Kotenko, Yaroslav Bulda, Anton Tyshko
+Copyright (c) 2013 Ivan Lisovoy, Denis Kotenko, Yaroslav Bulda, Anton Tyshko
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
