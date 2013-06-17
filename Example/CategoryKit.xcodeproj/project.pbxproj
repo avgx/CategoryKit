@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04904453176B6B3A00E97C54 /* NSArray+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */; };
-		04904454176B6B3A00E97C54 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490441B176B6B3A00E97C54 /* NSData+AESCrypt.m */; };
-		04904455176B6B3A00E97C54 /* NSData+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490441D176B6B3A00E97C54 /* NSData+JSON.m */; };
-		04904456176B6B3A00E97C54 /* NSData+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490441F176B6B3A00E97C54 /* NSData+JSON.m */; };
+		04904454176B6B3A00E97C54 /* NSData+CKAESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490441B176B6B3A00E97C54 /* NSData+CKAESCrypt.m */; };
+		04904455176B6B3A00E97C54 /* NSData+CKJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490441D176B6B3A00E97C54 /* NSData+CKJSON.m */; };
 		04904457176B6B3A00E97C54 /* NSDate+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904422176B6B3A00E97C54 /* NSDate+CKExtension.m */; };
 		04904458176B6B3A00E97C54 /* NSDate+CKNetConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904424176B6B3A00E97C54 /* NSDate+CKNetConversion.m */; };
 		04904459176B6B3A00E97C54 /* NSDictionary+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904426176B6B3A00E97C54 /* NSDictionary+CKExtension.m */; };
@@ -18,15 +17,14 @@
 		0490445B176B6B3A00E97C54 /* NSNumber+CKHumanize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490442B176B6B3A00E97C54 /* NSNumber+CKHumanize.m */; };
 		0490445C176B6B3A00E97C54 /* NSObject+CKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490442E176B6B3A00E97C54 /* NSObject+CKBlocks.m */; };
 		0490445D176B6B3A00E97C54 /* NSObject+CKRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904430176B6B3A00E97C54 /* NSObject+CKRuntimeHelper.m */; };
-		0490445E176B6B3A00E97C54 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904433176B6B3A00E97C54 /* NSString+AESCrypt.m */; };
-		0490445F176B6B3A00E97C54 /* NSString+BytesConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904435176B6B3A00E97C54 /* NSString+BytesConvert.m */; };
+		0490445E176B6B3A00E97C54 /* NSString+CKAESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904433176B6B3A00E97C54 /* NSString+CKAESCrypt.m */; };
 		04904460176B6B3A00E97C54 /* NSString+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904437176B6B3A00E97C54 /* NSString+CKExtension.m */; };
 		04904461176B6B3A00E97C54 /* NSString+CKFlipped.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904439176B6B3A00E97C54 /* NSString+CKFlipped.m */; };
 		04904462176B6B3A00E97C54 /* NSString+CKReversed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490443B176B6B3A00E97C54 /* NSString+CKReversed.m */; };
 		04904463176B6B3A00E97C54 /* NSString+CKTimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490443D176B6B3A00E97C54 /* NSString+CKTimeInterval.m */; };
-		04904464176B6B3A00E97C54 /* NSString+SHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490443F176B6B3A00E97C54 /* NSString+SHA256.m */; };
+		04904464176B6B3A00E97C54 /* NSString+CKSHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490443F176B6B3A00E97C54 /* NSString+CKSHA256.m */; };
 		04904465176B6B3A00E97C54 /* NSTimer+CKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904441176B6B3A00E97C54 /* NSTimer+CKBlocks.m */; };
-		04904466176B6B3A00E97C54 /* NSURLConnection+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904443176B6B3A00E97C54 /* NSURLConnection+Blocks.m */; };
+		04904466176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904443176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m */; };
 		04904467176B6B3A00E97C54 /* UIColor+CKEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904447176B6B3A00E97C54 /* UIColor+CKEqual.m */; };
 		04904468176B6B3A00E97C54 /* UIColor+CKExpanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904449176B6B3A00E97C54 /* UIColor+CKExpanded.m */; };
 		04904469176B6B3A00E97C54 /* UIDevice+CKHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490444B176B6B3A00E97C54 /* UIDevice+CKHardware.m */; };
@@ -49,12 +47,10 @@
 		04904416176B6B3A00E97C54 /* Foundation+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+Extension.h"; sourceTree = "<group>"; };
 		04904417176B6B3A00E97C54 /* NSArray+CKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CKExtension.h"; sourceTree = "<group>"; };
 		04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CKExtension.m"; sourceTree = "<group>"; };
-		0490441A176B6B3A00E97C54 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
-		0490441B176B6B3A00E97C54 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
-		0490441C176B6B3A00E97C54 /* NSData+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JSON.h"; sourceTree = "<group>"; };
-		0490441D176B6B3A00E97C54 /* NSData+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JSON.m"; sourceTree = "<group>"; };
-		0490441E176B6B3A00E97C54 /* NSData+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JSON.h"; sourceTree = "<group>"; };
-		0490441F176B6B3A00E97C54 /* NSData+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JSON.m"; sourceTree = "<group>"; };
+		0490441A176B6B3A00E97C54 /* NSData+CKAESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CKAESCrypt.h"; sourceTree = "<group>"; };
+		0490441B176B6B3A00E97C54 /* NSData+CKAESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CKAESCrypt.m"; sourceTree = "<group>"; };
+		0490441C176B6B3A00E97C54 /* NSData+CKJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CKJSON.h"; sourceTree = "<group>"; };
+		0490441D176B6B3A00E97C54 /* NSData+CKJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CKJSON.m"; sourceTree = "<group>"; };
 		04904421176B6B3A00E97C54 /* NSDate+CKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CKExtension.h"; sourceTree = "<group>"; };
 		04904422176B6B3A00E97C54 /* NSDate+CKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CKExtension.m"; sourceTree = "<group>"; };
 		04904423176B6B3A00E97C54 /* NSDate+CKNetConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CKNetConversion.h"; sourceTree = "<group>"; };
@@ -69,10 +65,8 @@
 		0490442E176B6B3A00E97C54 /* NSObject+CKBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CKBlocks.m"; sourceTree = "<group>"; };
 		0490442F176B6B3A00E97C54 /* NSObject+CKRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CKRuntimeHelper.h"; sourceTree = "<group>"; };
 		04904430176B6B3A00E97C54 /* NSObject+CKRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CKRuntimeHelper.m"; sourceTree = "<group>"; };
-		04904432176B6B3A00E97C54 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
-		04904433176B6B3A00E97C54 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
-		04904434176B6B3A00E97C54 /* NSString+BytesConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BytesConvert.h"; sourceTree = "<group>"; };
-		04904435176B6B3A00E97C54 /* NSString+BytesConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BytesConvert.m"; sourceTree = "<group>"; };
+		04904432176B6B3A00E97C54 /* NSString+CKAESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CKAESCrypt.h"; sourceTree = "<group>"; };
+		04904433176B6B3A00E97C54 /* NSString+CKAESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CKAESCrypt.m"; sourceTree = "<group>"; };
 		04904436176B6B3A00E97C54 /* NSString+CKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CKExtension.h"; sourceTree = "<group>"; };
 		04904437176B6B3A00E97C54 /* NSString+CKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CKExtension.m"; sourceTree = "<group>"; };
 		04904438176B6B3A00E97C54 /* NSString+CKFlipped.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CKFlipped.h"; sourceTree = "<group>"; };
@@ -81,12 +75,12 @@
 		0490443B176B6B3A00E97C54 /* NSString+CKReversed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CKReversed.m"; sourceTree = "<group>"; };
 		0490443C176B6B3A00E97C54 /* NSString+CKTimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CKTimeInterval.h"; sourceTree = "<group>"; };
 		0490443D176B6B3A00E97C54 /* NSString+CKTimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CKTimeInterval.m"; sourceTree = "<group>"; };
-		0490443E176B6B3A00E97C54 /* NSString+SHA256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA256.h"; sourceTree = "<group>"; };
-		0490443F176B6B3A00E97C54 /* NSString+SHA256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHA256.m"; sourceTree = "<group>"; };
+		0490443E176B6B3A00E97C54 /* NSString+CKSHA256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CKSHA256.h"; sourceTree = "<group>"; };
+		0490443F176B6B3A00E97C54 /* NSString+CKSHA256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CKSHA256.m"; sourceTree = "<group>"; };
 		04904440176B6B3A00E97C54 /* NSTimer+CKBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CKBlocks.h"; sourceTree = "<group>"; };
 		04904441176B6B3A00E97C54 /* NSTimer+CKBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CKBlocks.m"; sourceTree = "<group>"; };
-		04904442176B6B3A00E97C54 /* NSURLConnection+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+Blocks.h"; sourceTree = "<group>"; };
-		04904443176B6B3A00E97C54 /* NSURLConnection+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+Blocks.m"; sourceTree = "<group>"; };
+		04904442176B6B3A00E97C54 /* NSURLConnection+CKBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+CKBlocks.h"; sourceTree = "<group>"; };
+		04904443176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+CKBlocks.m"; sourceTree = "<group>"; };
 		04904446176B6B3A00E97C54 /* UIColor+CKEqual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CKEqual.h"; sourceTree = "<group>"; };
 		04904447176B6B3A00E97C54 /* UIColor+CKEqual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CKEqual.m"; sourceTree = "<group>"; };
 		04904448176B6B3A00E97C54 /* UIColor+CKExpanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CKExpanded.h"; sourceTree = "<group>"; };
@@ -143,24 +137,22 @@
 		04904415176B6B3A00E97C54 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				04904419176B6B3A00E97C54 /* NSData */,
+				04904420176B6B3A00E97C54 /* NSDate */,
+				04904429176B6B3A00E97C54 /* NSNumber */,
+				0490442C176B6B3A00E97C54 /* NSObject */,
+				04904431176B6B3A00E97C54 /* NSString */,
 				04904416176B6B3A00E97C54 /* Foundation+Extension.h */,
 				04904417176B6B3A00E97C54 /* NSArray+CKExtension.h */,
 				04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */,
-				04904419176B6B3A00E97C54 /* NSData */,
-				0490441E176B6B3A00E97C54 /* NSData+JSON.h */,
-				0490441F176B6B3A00E97C54 /* NSData+JSON.m */,
-				04904420176B6B3A00E97C54 /* NSDate */,
 				04904425176B6B3A00E97C54 /* NSDictionary+CKExtension.h */,
 				04904426176B6B3A00E97C54 /* NSDictionary+CKExtension.m */,
 				04904427176B6B3A00E97C54 /* NSFileManager+CKExtension.h */,
 				04904428176B6B3A00E97C54 /* NSFileManager+CKExtension.m */,
-				04904429176B6B3A00E97C54 /* NSNumber */,
-				0490442C176B6B3A00E97C54 /* NSObject */,
-				04904431176B6B3A00E97C54 /* NSString */,
 				04904440176B6B3A00E97C54 /* NSTimer+CKBlocks.h */,
 				04904441176B6B3A00E97C54 /* NSTimer+CKBlocks.m */,
-				04904442176B6B3A00E97C54 /* NSURLConnection+Blocks.h */,
-				04904443176B6B3A00E97C54 /* NSURLConnection+Blocks.m */,
+				04904442176B6B3A00E97C54 /* NSURLConnection+CKBlocks.h */,
+				04904443176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -168,10 +160,10 @@
 		04904419176B6B3A00E97C54 /* NSData */ = {
 			isa = PBXGroup;
 			children = (
-				0490441A176B6B3A00E97C54 /* NSData+AESCrypt.h */,
-				0490441B176B6B3A00E97C54 /* NSData+AESCrypt.m */,
-				0490441C176B6B3A00E97C54 /* NSData+JSON.h */,
-				0490441D176B6B3A00E97C54 /* NSData+JSON.m */,
+				0490441A176B6B3A00E97C54 /* NSData+CKAESCrypt.h */,
+				0490441B176B6B3A00E97C54 /* NSData+CKAESCrypt.m */,
+				0490441C176B6B3A00E97C54 /* NSData+CKJSON.h */,
+				0490441D176B6B3A00E97C54 /* NSData+CKJSON.m */,
 			);
 			path = NSData;
 			sourceTree = "<group>";
@@ -210,10 +202,8 @@
 		04904431176B6B3A00E97C54 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				04904432176B6B3A00E97C54 /* NSString+AESCrypt.h */,
-				04904433176B6B3A00E97C54 /* NSString+AESCrypt.m */,
-				04904434176B6B3A00E97C54 /* NSString+BytesConvert.h */,
-				04904435176B6B3A00E97C54 /* NSString+BytesConvert.m */,
+				04904432176B6B3A00E97C54 /* NSString+CKAESCrypt.h */,
+				04904433176B6B3A00E97C54 /* NSString+CKAESCrypt.m */,
 				04904436176B6B3A00E97C54 /* NSString+CKExtension.h */,
 				04904437176B6B3A00E97C54 /* NSString+CKExtension.m */,
 				04904438176B6B3A00E97C54 /* NSString+CKFlipped.h */,
@@ -222,8 +212,8 @@
 				0490443B176B6B3A00E97C54 /* NSString+CKReversed.m */,
 				0490443C176B6B3A00E97C54 /* NSString+CKTimeInterval.h */,
 				0490443D176B6B3A00E97C54 /* NSString+CKTimeInterval.m */,
-				0490443E176B6B3A00E97C54 /* NSString+SHA256.h */,
-				0490443F176B6B3A00E97C54 /* NSString+SHA256.m */,
+				0490443E176B6B3A00E97C54 /* NSString+CKSHA256.h */,
+				0490443F176B6B3A00E97C54 /* NSString+CKSHA256.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -377,9 +367,8 @@
 				94D41991176B585D00DED019 /* main.m in Sources */,
 				94D41995176B585D00DED019 /* CKAppDelegate.m in Sources */,
 				04904453176B6B3A00E97C54 /* NSArray+CKExtension.m in Sources */,
-				04904454176B6B3A00E97C54 /* NSData+AESCrypt.m in Sources */,
-				04904455176B6B3A00E97C54 /* NSData+JSON.m in Sources */,
-				04904456176B6B3A00E97C54 /* NSData+JSON.m in Sources */,
+				04904454176B6B3A00E97C54 /* NSData+CKAESCrypt.m in Sources */,
+				04904455176B6B3A00E97C54 /* NSData+CKJSON.m in Sources */,
 				04904457176B6B3A00E97C54 /* NSDate+CKExtension.m in Sources */,
 				04904458176B6B3A00E97C54 /* NSDate+CKNetConversion.m in Sources */,
 				04904459176B6B3A00E97C54 /* NSDictionary+CKExtension.m in Sources */,
@@ -387,15 +376,14 @@
 				0490445B176B6B3A00E97C54 /* NSNumber+CKHumanize.m in Sources */,
 				0490445C176B6B3A00E97C54 /* NSObject+CKBlocks.m in Sources */,
 				0490445D176B6B3A00E97C54 /* NSObject+CKRuntimeHelper.m in Sources */,
-				0490445E176B6B3A00E97C54 /* NSString+AESCrypt.m in Sources */,
-				0490445F176B6B3A00E97C54 /* NSString+BytesConvert.m in Sources */,
+				0490445E176B6B3A00E97C54 /* NSString+CKAESCrypt.m in Sources */,
 				04904460176B6B3A00E97C54 /* NSString+CKExtension.m in Sources */,
 				04904461176B6B3A00E97C54 /* NSString+CKFlipped.m in Sources */,
 				04904462176B6B3A00E97C54 /* NSString+CKReversed.m in Sources */,
 				04904463176B6B3A00E97C54 /* NSString+CKTimeInterval.m in Sources */,
-				04904464176B6B3A00E97C54 /* NSString+SHA256.m in Sources */,
+				04904464176B6B3A00E97C54 /* NSString+CKSHA256.m in Sources */,
 				04904465176B6B3A00E97C54 /* NSTimer+CKBlocks.m in Sources */,
-				04904466176B6B3A00E97C54 /* NSURLConnection+Blocks.m in Sources */,
+				04904466176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m in Sources */,
 				04904467176B6B3A00E97C54 /* UIColor+CKEqual.m in Sources */,
 				04904468176B6B3A00E97C54 /* UIColor+CKExpanded.m in Sources */,
 				04904469176B6B3A00E97C54 /* UIDevice+CKHardware.m in Sources */,

@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2013 Lisovoy Ivan, Denis Kotenko, Yaroslav Bulda
+// Copyright (c) 2013 Michael Sedlaczek
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -20,33 +20,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "NSData+CKAESCrypt.h"
 
-typedef enum {
-	ImageCropModeTopLeft,
-	ImageCropModeTopCenter,
-	ImageCropModeTopRight,
-	ImageCropModeBottomLeft,
-	ImageCropModeBottomCenter,
-	ImageCropModeBottomRight,
-	ImageCropModeLeftCenter,
-	ImageCropModeRightCenter,
-	ImageCropModeCenter
-} ImageCropMode;
+@interface NSString (CKAESCrypt)
 
-
-@interface UIImage (CKTransform)
-
-- (UIImage *) scaleToFitSize:(CGSize) newSize;
-- (UIImage *) scaleToSize:(CGSize) newSize;
-
-- (UIImage *) cropToRect:(CGRect) rect;
-- (UIImage *) cropImage:(CGSize) newSize;
-- (UIImage *) cropImage:(CGSize) newSize mode:(ImageCropMode) cropMode;
-
-- (UIImage *) rotateInRadians:(float) radians;
-- (UIImage *) rotateInDegrees:(float) degrees;
-
-+ (UIImage *) normalizeImage:(UIImage *) image;
+- (NSString *)AES256EncryptWithKey:(NSString *)key;
+- (NSString *)AES256DecryptWithKey:(NSString *)key;
+- (NSString *)AES256EncryptWithKeyAndBase64:(NSString *)key;
+- (NSString *)AES256DecryptWithKeywithBase64:(NSString *)key;
 
 @end

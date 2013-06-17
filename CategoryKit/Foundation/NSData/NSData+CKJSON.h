@@ -20,33 +20,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
 
-typedef enum {
-	ImageCropModeTopLeft,
-	ImageCropModeTopCenter,
-	ImageCropModeTopRight,
-	ImageCropModeBottomLeft,
-	ImageCropModeBottomCenter,
-	ImageCropModeBottomRight,
-	ImageCropModeLeftCenter,
-	ImageCropModeRightCenter,
-	ImageCropModeCenter
-} ImageCropMode;
+#import <Foundation/Foundation.h>
 
+@interface NSData (CKJSON)
 
-@interface UIImage (CKTransform)
-
-- (UIImage *) scaleToFitSize:(CGSize) newSize;
-- (UIImage *) scaleToSize:(CGSize) newSize;
-
-- (UIImage *) cropToRect:(CGRect) rect;
-- (UIImage *) cropImage:(CGSize) newSize;
-- (UIImage *) cropImage:(CGSize) newSize mode:(ImageCropMode) cropMode;
-
-- (UIImage *) rotateInRadians:(float) radians;
-- (UIImage *) rotateInDegrees:(float) degrees;
-
-+ (UIImage *) normalizeImage:(UIImage *) image;
+- (id) objectFromJSONData:(NSError **) error;
 
 @end

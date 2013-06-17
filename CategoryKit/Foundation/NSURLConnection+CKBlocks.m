@@ -20,33 +20,35 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import "NSURLConnection+CKBlocks.h"
 
-typedef enum {
-	ImageCropModeTopLeft,
-	ImageCropModeTopCenter,
-	ImageCropModeTopRight,
-	ImageCropModeBottomLeft,
-	ImageCropModeBottomCenter,
-	ImageCropModeBottomRight,
-	ImageCropModeLeftCenter,
-	ImageCropModeRightCenter,
-	ImageCropModeCenter
-} ImageCropMode;
+@implementation NSURLConnection (CKBlocks)
 
+// -----------------------------------------------------------------------------
 
-@interface UIImage (CKTransform)
++ (void)asyncRequest:(NSURLRequest *)request
+             success:(void(^)(NSData *, NSURLResponse *))successBlock_
+             failure:(void(^)(NSData *, NSError *))failureBlock_ {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSURLResponse *response = nil;
+        NSError *error = nil;
 
-- (UIImage *) scaleToFitSize:(CGSize) newSize;
-- (UIImage *) scaleToSize:(CGSize) newSize;
+        NSData *data = [NSURLConnection sendSynchronousRequest:request
+                                             returningResponse:&response
+                                                         error:&error];
+        
+        if (error) {
+            failureBlock_(data,error);
+        }
+        else {
+            successBlock_(data,response);
+        }
+        
+        [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    });
+}
 
-- (UIImage *) cropToRect:(CGRect) rect;
-- (UIImage *) cropImage:(CGSize) newSize;
-- (UIImage *) cropImage:(CGSize) newSize mode:(ImageCropMode) cropMode;
-
-- (UIImage *) rotateInRadians:(float) radians;
-- (UIImage *) rotateInDegrees:(float) degrees;
-
-+ (UIImage *) normalizeImage:(UIImage *) image;
+// -----------------------------------------------------------------------------
 
 @end
+
