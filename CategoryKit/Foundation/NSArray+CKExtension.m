@@ -22,6 +22,18 @@
 
 // -------------------------------------------------------------------------------
 
+- (BOOL) isAllObjectsConformsToProtocol:(Protocol *) protocol {
+    for (id object in self) {
+        if ([object conformsToProtocol:protocol] == NO) {
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
+// -------------------------------------------------------------------------------
+
 - (NSArray *) subarrayWithRange:(NSRange) aRange {
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
