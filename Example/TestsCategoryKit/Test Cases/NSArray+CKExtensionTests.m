@@ -17,6 +17,13 @@
 
 // -----------------------------------------------------------------------------
 
+- (void) testFirstObject {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
+    GHAssertEquals([array objectAtIndex:0], [array firstObject], nil);
+}
+
+// -----------------------------------------------------------------------------
+
 - (void)testReversed {
 	NSArray *array = [[NSArray arrayWithObjects:@"1", @"2", @"3", nil] reversedArray];
 	NSArray *expected = [NSArray arrayWithObjects:@"3", @"2", @"1", nil];
