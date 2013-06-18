@@ -48,6 +48,16 @@
 
 // -------------------------------------------------------------------------------
 
+- (NSArray *) reversedArray {
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:[self count]];
+	for(id obj in [self reverseObjectEnumerator]) {
+		[array addObject:obj];
+	}
+	return array;
+}
+
+// -----------------------------------------------------------------------------
+
 - (NSArray *) subarrayWithRange:(NSRange) aRange {
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
