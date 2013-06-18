@@ -20,15 +20,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-@interface NSArray (CKExtension)
+#import <Foundation/Foundation.h>
 
-- (id) firstObject;
-- (BOOL) isAllObjectsConformsToProtocol:(Protocol *) protocol;
+@interface NSString (CKSHA256)
 
-- (NSArray *) subarrayWithRange:(NSRange) aRange;
-- (NSArray *) subarrayToIndex:(NSInteger) index;
-- (NSArray *) subarrayFromIndex:(NSInteger) index;
-
-- (NSArray *) filteredArrayUsingPredicateWithFormat:(NSString *) format, ...;
+- (NSString *) sha256;
+- (NSString *) hmac_sha256WithBase64EncodingWithKey:(NSString *)key;
 
 @end

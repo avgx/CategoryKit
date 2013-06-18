@@ -20,15 +20,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-@interface NSArray (CKExtension)
 
-- (id) firstObject;
-- (BOOL) isAllObjectsConformsToProtocol:(Protocol *) protocol;
+#import <Foundation/Foundation.h>
 
-- (NSArray *) subarrayWithRange:(NSRange) aRange;
-- (NSArray *) subarrayToIndex:(NSInteger) index;
-- (NSArray *) subarrayFromIndex:(NSInteger) index;
+@interface NSData (CKJSON)
 
-- (NSArray *) filteredArrayUsingPredicateWithFormat:(NSString *) format, ...;
+- (id) objectFromJSONData:(NSError **) error;
 
 @end

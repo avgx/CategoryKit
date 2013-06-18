@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2013 Lisovoy Ivan, Denis Kotenko, Yaroslav Bulda
+// Copyright (c) 2013 Michael Sedlaczek
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -20,15 +20,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-@interface NSArray (CKExtension)
+#import <Foundation/Foundation.h>
+#import "NSData+CKAESCrypt.h"
 
-- (id) firstObject;
-- (BOOL) isAllObjectsConformsToProtocol:(Protocol *) protocol;
+@interface NSString (CKAESCrypt)
 
-- (NSArray *) subarrayWithRange:(NSRange) aRange;
-- (NSArray *) subarrayToIndex:(NSInteger) index;
-- (NSArray *) subarrayFromIndex:(NSInteger) index;
-
-- (NSArray *) filteredArrayUsingPredicateWithFormat:(NSString *) format, ...;
+- (NSString *)AES256EncryptWithKey:(NSString *)key;
+- (NSString *)AES256DecryptWithKey:(NSString *)key;
+- (NSString *)AES256EncryptWithKeyAndBase64:(NSString *)key;
+- (NSString *)AES256DecryptWithKeywithBase64:(NSString *)key;
 
 @end

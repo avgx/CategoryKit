@@ -20,37 +20,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "NSDate+CKNetConversion.h"
 
-@implementation NSDate (CKNetConversion)
+#import "NSData+CKJSON.h"
+
+@implementation NSData (CKJSON)
 
 // -------------------------------------------------------------------------------
 
-+ (NSDate *)dateFromDotNet:(NSString* )stringDate {
-    static NSDateFormatter *parser = nil;
-    
-    if (parser == nil) {
-        parser = [[NSDateFormatter alloc] init];
-        [parser setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
-        [parser setFormatterBehavior:NSDateFormatterBehavior10_4];
-        [parser setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS"];
-        [parser setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
+- (id) objectFromJSONData:(NSError **) error {
+    id object = [NSJSONSerialization JSONObjectWithData:self options:NSJSONReadingMutableContainers error:error];
+    if (error != nil) {
+        return nil;
     }
-    
-    NSDate *returnValue = [parser dateFromString:stringDate];
-    return returnValue;
-}
-
-// -------------------------------------------------------------------------------
-
-- (NSString *)dateToDotNet {
-    double timeSince1970=[self timeIntervalSince1970];
-    NSInteger offset = [[NSTimeZone defaultTimeZone] secondsFromGMT];
-    offset=offset/3600;
-    double nowMillis = 1000.0 * (timeSince1970);
-    NSString *dotNetDate=[NSString stringWithFormat:@"/Date(%.0f%+03d00)/",nowMillis,offset];
-    
-    return dotNetDate;
+    return object;
 }
 
 // -------------------------------------------------------------------------------
