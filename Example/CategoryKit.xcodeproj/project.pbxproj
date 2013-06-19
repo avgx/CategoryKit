@@ -38,6 +38,7 @@
 		63396F3B1771825D00D0D233 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63396F3A1771825D00D0D233 /* OCHamcrestIOS.framework */; };
 		63396F3D1771826F00D0D233 /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63396F3C1771826F00D0D233 /* OCMockitoIOS.framework */; };
 		63396F3F177182C400D0D233 /* NSArray+CKExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63396F3E177182C400D0D233 /* NSArray+CKExtensionTests.m */; };
+		948040501771864E00BF13B3 /* NSArray+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */; };
 		94D41985176B585D00DED019 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41984176B585D00DED019 /* UIKit.framework */; };
 		94D41987176B585D00DED019 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41986176B585D00DED019 /* Foundation.framework */; };
 		94D41989176B585D00DED019 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41988176B585D00DED019 /* CoreGraphics.framework */; };
@@ -459,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63396F3F177182C400D0D233 /* NSArray+CKExtensionTests.m in Sources */,
+				948040501771864E00BF13B3 /* NSArray+CKExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +639,7 @@
 				63396F391771822800D0D233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94D4197C176B585D00DED019 /* Build configuration list for PBXProject "CategoryKit" */ = {
 			isa = XCConfigurationList;
