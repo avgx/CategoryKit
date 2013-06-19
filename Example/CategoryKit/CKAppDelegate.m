@@ -7,6 +7,7 @@
 //
 
 #import "CKAppDelegate.h"
+#import "NSDictionary+CKExtension.h"
 
 @implementation CKAppDelegate
 

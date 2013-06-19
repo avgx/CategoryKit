@@ -37,8 +37,10 @@
 		63396F321771822800D0D233 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63396F301771822800D0D233 /* InfoPlist.strings */; };
 		63396F3B1771825D00D0D233 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63396F3A1771825D00D0D233 /* OCHamcrestIOS.framework */; };
 		63396F3D1771826F00D0D233 /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63396F3C1771826F00D0D233 /* OCMockitoIOS.framework */; };
-		63396F3F177182C400D0D233 /* NSArray+CKExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63396F3E177182C400D0D233 /* NSArray+CKExtensionTests.m */; };
 		948040501771864E00BF13B3 /* NSArray+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */; };
+		9480405317718F0300BF13B3 /* NSDictionary+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9480405217718F0300BF13B3 /* NSDictionary+CKExtension.m */; };
+		9480405517718F2D00BF13B3 /* NSArray+CKExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9480405417718F2D00BF13B3 /* NSArray+CKExtensionTests.m */; };
+		948040561771914300BF13B3 /* NSDictionary+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904426176B6B3A00E97C54 /* NSDictionary+CKExtension.m */; };
 		94D41985176B585D00DED019 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41984176B585D00DED019 /* UIKit.framework */; };
 		94D41987176B585D00DED019 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41986176B585D00DED019 /* Foundation.framework */; };
 		94D41989176B585D00DED019 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41988176B585D00DED019 /* CoreGraphics.framework */; };
@@ -109,7 +111,8 @@
 		63396F361771822800D0D233 /* TestsCategoryKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestsCategoryKit-Prefix.pch"; sourceTree = "<group>"; };
 		63396F3A1771825D00D0D233 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		63396F3C1771826F00D0D233 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMockitoIOS.framework; sourceTree = "<group>"; };
-		63396F3E177182C400D0D233 /* NSArray+CKExtensionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CKExtensionTests.m"; sourceTree = "<group>"; };
+		9480405217718F0300BF13B3 /* NSDictionary+CKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+CKExtension.m"; path = "Test Cases/NSDictionary+CKExtension.m"; sourceTree = "<group>"; };
+		9480405417718F2D00BF13B3 /* NSArray+CKExtensionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CKExtensionTests.m"; path = "Test Cases/NSArray+CKExtensionTests.m"; sourceTree = "<group>"; };
 		94D41981176B585D00DED019 /* CategoryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D41984176B585D00DED019 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94D41986176B585D00DED019 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -277,7 +280,8 @@
 		63396F2D1771822800D0D233 /* TestsCategoryKit */ = {
 			isa = PBXGroup;
 			children = (
-				63396F3E177182C400D0D233 /* NSArray+CKExtensionTests.m */,
+				9480405417718F2D00BF13B3 /* NSArray+CKExtensionTests.m */,
+				9480405217718F0300BF13B3 /* NSDictionary+CKExtension.m */,
 				63396F2E1771822800D0D233 /* Supporting Files */,
 			);
 			path = TestsCategoryKit;
@@ -459,8 +463,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63396F3F177182C400D0D233 /* NSArray+CKExtensionTests.m in Sources */,
 				948040501771864E00BF13B3 /* NSArray+CKExtension.m in Sources */,
+				9480405317718F0300BF13B3 /* NSDictionary+CKExtension.m in Sources */,
+				9480405517718F2D00BF13B3 /* NSArray+CKExtensionTests.m in Sources */,
+				948040561771914300BF13B3 /* NSDictionary+CKExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
