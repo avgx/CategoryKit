@@ -73,4 +73,23 @@
 
 // -----------------------------------------------------------------------------
 
+- (void) testSubarrayWithPredicate {
+    NSArray *array = @[@(1), @(2), @(3)];
+    NSArray *subarray4 = [array filteredArrayUsingPredicateWithFormat:@"SELF == %@", @(2)];
+    NSArray *expected4 = @[@(2)];
+    
+    assertThat(subarray4, is(expected4));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayWithNilPredicate {
+    NSArray *array = @[@(1), @(2), @(3)];
+    NSArray *subarray4 = [array filteredArrayUsingPredicateWithFormat:nil];
+    
+    assertThat(subarray4, nilValue());
+}
+
+// -------------------------------------------------------------------------------
+
 @end
