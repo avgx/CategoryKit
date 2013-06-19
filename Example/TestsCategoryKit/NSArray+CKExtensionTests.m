@@ -34,6 +34,20 @@
     assertThat([array objectAtIndex:0], is([array firstObject]));
 }
 
+// -------------------------------------------------------------------------------
+
+- (void)testIsAllObjectsConformsToProtocolShouldReturnYES {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
+    assertThatBool([array isAllObjectsConformsToProtocol:@protocol(NSCopying)], equalToBool(YES));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void)testIsAllObjectConformsToProtocolShouldReturnNO {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
+    assertThatBool([array isAllObjectsConformsToProtocol:@protocol(UIScrollViewDelegate)], equalToBool(NO));
+}
+
 // -----------------------------------------------------------------------------
 
 - (void)testReversed {
