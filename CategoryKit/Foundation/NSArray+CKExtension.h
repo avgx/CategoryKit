@@ -23,6 +23,9 @@
 @interface NSArray (CKExtension)
 
 - (id) firstObject;
+- (BOOL) isAllObjectsConformsToProtocol:(Protocol *) protocol;
+
+- (NSArray *) reversedArray;
 
 - (NSArray *) subarrayWithRange:(NSRange) aRange;
 - (NSArray *) subarrayToIndex:(NSInteger) index;
