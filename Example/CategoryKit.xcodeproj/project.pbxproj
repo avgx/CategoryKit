@@ -37,7 +37,6 @@
 		637CE61717707C74003DA5FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41986176B585D00DED019 /* Foundation.framework */; };
 		637CE61817707C74003DA5FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41988176B585D00DED019 /* CoreGraphics.framework */; };
 		637CE61E17707C74003DA5FD /* GHUnitIOSTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CE61D17707C74003DA5FD /* GHUnitIOSTestMain.m */; };
-		637CE62117707C74003DA5FD /* SampleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CE62017707C74003DA5FD /* SampleTest.m */; };
 		637CE62417707C75003DA5FD /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CE62317707C75003DA5FD /* GHUnitIOS.framework */; };
 		637CE62817707C75003DA5FD /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CE62717707C75003DA5FD /* libOCMock.a */; };
 		94D41985176B585D00DED019 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41984176B585D00DED019 /* UIKit.framework */; };
@@ -108,7 +107,6 @@
 		637CE61B17707C74003DA5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637CE61C17707C74003DA5FD /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		637CE61D17707C74003DA5FD /* GHUnitIOSTestMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHUnitIOSTestMain.m; sourceTree = "<group>"; };
-		637CE62017707C74003DA5FD /* SampleTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SampleTest.m; path = "Test Cases/SampleTest.m"; sourceTree = "<group>"; };
 		637CE62317707C75003DA5FD /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
 		637CE62717707C75003DA5FD /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Libraries/OCMock/libOCMock.a; sourceTree = "<group>"; };
 		637CE62B17707C75003DA5FD /* OCMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = Libraries/OCMock/Headers/OCMock/OCMock.h; sourceTree = "<group>"; };
@@ -305,7 +303,6 @@
 		637CE61F17707C74003DA5FD /* Test Cases */ = {
 			isa = PBXGroup;
 			children = (
-				637CE62017707C74003DA5FD /* SampleTest.m */,
 				0492AAAC1770C91E006D2758 /* NSArray+CKExtensionTests.m */,
 			);
 			name = "Test Cases";
@@ -503,7 +500,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				637CE61E17707C74003DA5FD /* GHUnitIOSTestMain.m in Sources */,
-				637CE62117707C74003DA5FD /* SampleTest.m in Sources */,
 				0492AAAD1770C91E006D2758 /* NSArray+CKExtensionTests.m in Sources */,
 				0492AAAE1770CC8F006D2758 /* NSArray+CKExtension.m in Sources */,
 			);
