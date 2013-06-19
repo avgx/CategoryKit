@@ -12,13 +12,13 @@
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 
-@interface NSDictionary_CKExtension : SenTestCase {
+@interface NSDictionary_CKExtensionTest : SenTestCase {
     NSDictionary *_dictionary;
 }
  
 @end
 
-@implementation NSDictionary_CKExtension
+@implementation NSDictionary_CKExtensionTest
 
 - (void) setUp {
     [super setUp];
