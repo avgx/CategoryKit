@@ -45,6 +45,27 @@
 		9480405C1771A5A500BF13B3 /* NSNumber+CKHumanizeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9480405B1771A5A500BF13B3 /* NSNumber+CKHumanizeTest.m */; };
 		9480405F1771AD3C00BF13B3 /* NSDate+CKExtensionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9480405E1771AD3C00BF13B3 /* NSDate+CKExtensionTest.m */; };
 		948040601771AD4B00BF13B3 /* NSDate+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904422176B6B3A00E97C54 /* NSDate+CKExtension.m */; };
+		94A7A6781772EF1C00F8298D /* NSData+CKAESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490441B176B6B3A00E97C54 /* NSData+CKAESCrypt.m */; };
+		94A7A6791772EF1C00F8298D /* NSData+CKJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490441D176B6B3A00E97C54 /* NSData+CKJSON.m */; };
+		94A7A67A1772EF1C00F8298D /* NSDate+CKNetConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904424176B6B3A00E97C54 /* NSDate+CKNetConversion.m */; };
+		94A7A67B1772EF1C00F8298D /* NSObject+CKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490442E176B6B3A00E97C54 /* NSObject+CKBlocks.m */; };
+		94A7A67C1772EF1C00F8298D /* NSObject+CKRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904430176B6B3A00E97C54 /* NSObject+CKRuntimeHelper.m */; };
+		94A7A67D1772EF1C00F8298D /* NSString+CKAESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904433176B6B3A00E97C54 /* NSString+CKAESCrypt.m */; };
+		94A7A67E1772EF1C00F8298D /* NSString+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904437176B6B3A00E97C54 /* NSString+CKExtension.m */; };
+		94A7A67F1772EF1C00F8298D /* NSString+CKFlipped.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904439176B6B3A00E97C54 /* NSString+CKFlipped.m */; };
+		94A7A6801772EF1C00F8298D /* NSString+CKReversed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490443B176B6B3A00E97C54 /* NSString+CKReversed.m */; };
+		94A7A6811772EF1C00F8298D /* NSString+CKTimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490443D176B6B3A00E97C54 /* NSString+CKTimeInterval.m */; };
+		94A7A6821772EF1C00F8298D /* NSString+CKSHA256.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490443F176B6B3A00E97C54 /* NSString+CKSHA256.m */; };
+		94A7A6831772EF1C00F8298D /* NSFileManager+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904428176B6B3A00E97C54 /* NSFileManager+CKExtension.m */; };
+		94A7A6841772EF1C00F8298D /* NSTimer+CKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904441176B6B3A00E97C54 /* NSTimer+CKBlocks.m */; };
+		94A7A6851772EF1C00F8298D /* NSURLConnection+CKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904443176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m */; };
+		94A7A6861772EF1C00F8298D /* UIColor+CKEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904447176B6B3A00E97C54 /* UIColor+CKEqual.m */; };
+		94A7A6871772EF1C00F8298D /* UIColor+CKExpanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904449176B6B3A00E97C54 /* UIColor+CKExpanded.m */; };
+		94A7A6881772EF1C00F8298D /* UIDevice+CKHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490444B176B6B3A00E97C54 /* UIDevice+CKHardware.m */; };
+		94A7A6891772EF1C00F8298D /* UIImage+CKTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490444D176B6B3A00E97C54 /* UIImage+CKTransform.m */; };
+		94A7A68A1772EF1C00F8298D /* UIScreen+CKIsRetina.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904450176B6B3A00E97C54 /* UIScreen+CKIsRetina.m */; };
+		94A7A68B1772EF1C00F8298D /* UIView+CKFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904452176B6B3A00E97C54 /* UIView+CKFrame.m */; };
+		94A7A68C1772EF3C00F8298D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41988176B585D00DED019 /* CoreGraphics.framework */; };
 		94D41985176B585D00DED019 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41984176B585D00DED019 /* UIKit.framework */; };
 		94D41987176B585D00DED019 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41986176B585D00DED019 /* Foundation.framework */; };
 		94D41989176B585D00DED019 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41988176B585D00DED019 /* CoreGraphics.framework */; };
@@ -144,6 +165,7 @@
 				63396F2C1771822800D0D233 /* Foundation.framework in Frameworks */,
 				63396F3B1771825D00D0D233 /* OCHamcrestIOS.framework in Frameworks */,
 				63396F3D1771826F00D0D233 /* OCMockitoIOS.framework in Frameworks */,
+				94A7A68C1772EF3C00F8298D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +395,7 @@
 				63396F241771822800D0D233 /* Frameworks */,
 				63396F251771822800D0D233 /* Resources */,
 				63396F261771822800D0D233 /* ShellScript */,
+				94A7A6771772EDBC00F8298D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -390,6 +413,7 @@
 				94D4197D176B585D00DED019 /* Sources */,
 				94D4197E176B585D00DED019 /* Frameworks */,
 				94D4197F176B585D00DED019 /* Resources */,
+				94A7A6761772E7E600F8298D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -464,6 +488,32 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		94A7A6761772E7E600F8298D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = XcodeCoverage/exportenv.sh;
+		};
+		94A7A6771772EDBC00F8298D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = XcodeCoverage/exportenv.sh;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -471,6 +521,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A7A6781772EF1C00F8298D /* NSData+CKAESCrypt.m in Sources */,
+				94A7A6791772EF1C00F8298D /* NSData+CKJSON.m in Sources */,
+				94A7A67A1772EF1C00F8298D /* NSDate+CKNetConversion.m in Sources */,
+				94A7A67B1772EF1C00F8298D /* NSObject+CKBlocks.m in Sources */,
+				94A7A67C1772EF1C00F8298D /* NSObject+CKRuntimeHelper.m in Sources */,
+				94A7A67D1772EF1C00F8298D /* NSString+CKAESCrypt.m in Sources */,
+				94A7A67E1772EF1C00F8298D /* NSString+CKExtension.m in Sources */,
+				94A7A67F1772EF1C00F8298D /* NSString+CKFlipped.m in Sources */,
+				94A7A6801772EF1C00F8298D /* NSString+CKReversed.m in Sources */,
+				94A7A6811772EF1C00F8298D /* NSString+CKTimeInterval.m in Sources */,
+				94A7A6821772EF1C00F8298D /* NSString+CKSHA256.m in Sources */,
+				94A7A6831772EF1C00F8298D /* NSFileManager+CKExtension.m in Sources */,
+				94A7A6841772EF1C00F8298D /* NSTimer+CKBlocks.m in Sources */,
+				94A7A6851772EF1C00F8298D /* NSURLConnection+CKBlocks.m in Sources */,
+				94A7A6861772EF1C00F8298D /* UIColor+CKEqual.m in Sources */,
+				94A7A6871772EF1C00F8298D /* UIColor+CKExpanded.m in Sources */,
+				94A7A6881772EF1C00F8298D /* UIDevice+CKHardware.m in Sources */,
+				94A7A6891772EF1C00F8298D /* UIImage+CKTransform.m in Sources */,
+				94A7A68A1772EF1C00F8298D /* UIScreen+CKIsRetina.m in Sources */,
+				94A7A68B1772EF1C00F8298D /* UIView+CKFrame.m in Sources */,
 				948040501771864E00BF13B3 /* NSArray+CKExtension.m in Sources */,
 				9480405317718F0300BF13B3 /* NSDictionary+CKExtensionTest.m in Sources */,
 				9480405517718F2D00BF13B3 /* NSArray+CKExtensionTests.m in Sources */,
@@ -545,6 +615,8 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)\"",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestsCategoryKit/TestsCategoryKit-Prefix.pch";
 				INFOPLIST_FILE = "TestsCategoryKit/TestsCategoryKit-Info.plist";
@@ -561,6 +633,8 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"\"$(SRCROOT)\"",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestsCategoryKit/TestsCategoryKit-Prefix.pch";
 				INFOPLIST_FILE = "TestsCategoryKit/TestsCategoryKit-Info.plist";
@@ -628,10 +702,13 @@
 		94D4199F176B585D00DED019 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CategoryKit/CategoryKit-Prefix.pch";
 				INFOPLIST_FILE = "CategoryKit/CategoryKit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -639,10 +716,13 @@
 		94D419A0176B585D00DED019 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CategoryKit/CategoryKit-Prefix.pch";
 				INFOPLIST_FILE = "CategoryKit/CategoryKit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -657,7 +737,7 @@
 				63396F391771822800D0D233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		94D4197C176B585D00DED019 /* Build configuration list for PBXProject "CategoryKit" */ = {
 			isa = XCConfigurationList;
@@ -666,7 +746,7 @@
 				94D4199D176B585D00DED019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		94D4199E176B585D00DED019 /* Build configuration list for PBXNativeTarget "CategoryKit" */ = {
 			isa = XCConfigurationList;
@@ -675,7 +755,7 @@
 				94D419A0176B585D00DED019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
