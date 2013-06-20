@@ -23,7 +23,7 @@
 
 
 @interface NSArray_CKExtensionTests : SenTestCase {
-    NSArray *_array;
+    NSArray *_sut;
 }
 @end
 
@@ -31,65 +31,148 @@
 
 // -------------------------------------------------------------------------------
 
-- (void)setUp {
+- (void) setUp {
     [super setUp];
-    _array = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
-}
-
-// -----------------------------------------------------------------------------
-
-- (void)testFirstObject {
-    assertThat([_array objectAtIndex:0], is([_array firstObject]));
+    _sut = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
 }
 
 // -------------------------------------------------------------------------------
 
-- (void)testIsAllObjectsConformsToProtocolShouldReturnYES {
-    assertThatBool([_array isAllObjectsConformsToProtocol:@protocol(NSCopying)], equalToBool(YES));
-}
-
-// -------------------------------------------------------------------------------
-
-- (void)testIsAllObjectConformsToProtocolShouldReturnNO {
-    assertThatBool([_array isAllObjectsConformsToProtocol:@protocol(UIScrollViewDelegate)], equalToBool(NO));
+- (void) tearDown {
+    _sut = nil;
+    [super tearDown];
 }
 
 // -----------------------------------------------------------------------------
 
-- (void)testReversed {
+- (void) testFirstObject {
+    assertThat([_sut objectAtIndex:0], is([_sut firstObject]));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testFirstObjectOfEmptyArrayShouldBeNil {
+    assertThat([[NSArray array] firstObject], nilValue());
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testIsAllObjectsConformsToProtocolShouldReturnYES {
+    assertThatBool([_sut isAllObjectsConformsToProtocol:@protocol(NSCopying)], equalToBool(YES));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testIsAllObjectConformsToProtocolShouldReturnNO {
+    assertThatBool([_sut isAllObjectsConformsToProtocol:@protocol(UIScrollViewDelegate)], equalToBool(NO));
+}
+
+// -----------------------------------------------------------------------------
+
+- (void) testReversed {
 	NSArray *expected = [NSArray arrayWithObjects:@"3", @"2", @"1", nil];
-    assertThat([_array reversedArray], is(expected));
+    assertThat([_sut reversedArray], is(expected));
 }
 
 // -----------------------------------------------------------------------------
 
-- (void)testSubarrayWithRange0Length {
-	NSArray *subarray = [_array subarrayWithRange:NSMakeRange(0, 0)];
+- (void) testSubarrayWithRange0Length {
+	NSArray *subarray = [_sut subarrayWithRange:NSMakeRange(0, 0)];
 	NSArray *expected = [NSArray array];
     assertThat(subarray, is(expected));
 }
 
 // -----------------------------------------------------------------------------
 
-- (void)testSubarrayWithRangeEqual {
-	NSArray *subarray = [_array subarrayWithRange:NSMakeRange(0, 3)];
-    
-    assertThat(subarray, is(_array));
+- (void) testSubarrayWithRangeEqual {
+	NSArray *subarray = [_sut subarrayWithRange:NSMakeRange(0, 3)];
+    assertThat(subarray, is(_sut));
 }
 
 // -----------------------------------------------------------------------------
 
-- (void)testSubarrayWithRangeNormal {
-	NSArray *subarray = [_array subarrayWithRange:NSMakeRange(1, 2)];
+- (void) testSubarrayWithRangeNormal {
+	NSArray *subarray = [_sut subarrayWithRange:NSMakeRange(1, 2)];
 	NSArray *expected = [NSArray arrayWithObjects:@"2", @"3", nil];
     
     assertThat(subarray, is(expected));
 }
 
-// -----------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayWithRangeLocationGreaterThanOriginalArrayCountShouldReturnEmptyArray {
+    NSArray *subarray = [_sut subarrayWithRange:NSMakeRange(4, 1)];
+    assertThat(subarray, is([NSArray array]));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayWithRangeGreaterThanOriginalArrayCountShouldReturnOriginalArray {
+    NSArray *subarray = [_sut subarrayWithRange:NSMakeRange(0, 4)];
+    assertThat(subarray, is(_sut));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayWithRangeEqualToOriginalArrayCountShouldReturnOriginalArray {
+    NSArray *subarray = [_sut subarrayWithRange:NSMakeRange(0, 3)];
+    assertThat(subarray, is(_sut));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayToIndex0ShouldReturnEmptyArray {
+    NSArray *subarray = [_sut subarrayToIndex:0];
+    assertThat(subarray, is([NSArray array]));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayToIndex1ShouldReturnArrayWithFirstObjectOfOriginalArray {
+    NSArray *subarray = [_sut subarrayToIndex:1];
+    NSArray *expected = @[@"1"];
+    assertThat(subarray, is(expected));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayToIndexGreaterThenOriginalArrayCountShouldReturnOriginalArray {
+    NSArray *subarray = [_sut subarrayToIndex:4];
+    assertThat(subarray, is(_sut));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayToIndexEqualToOriginalArrayCountShouldReturnOriginalArray {
+    NSArray *subarray = [_sut subarrayToIndex:3];
+    assertThat(subarray, is(_sut));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayFromIndex0ShouldReturnOriginalArray {
+    NSArray *subarray = [_sut subarrayFromIndex:0];
+    assertThat(subarray, is(_sut));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayFromIndexGreatherThenOriginalArrayCountShouldReturnEmptyArray {
+    NSArray *subarray = [_sut subarrayFromIndex:4];
+    assertThat(subarray, is([NSArray array]));
+}
+               
+// -------------------------------------------------------------------------------
+
+- (void) testSubarrayFromIndexEqualToOriginalArrayCountShouldReturnEmptyArray {
+    NSArray *subarray = [_sut subarrayFromIndex:3];
+    assertThat(subarray, is([NSArray array]));
+}
+
+// -------------------------------------------------------------------------------
 
 - (void) testSubarrayWithPredicate {
-    NSArray *subarray = [_array filteredArrayUsingPredicateWithFormat:@"SELF == %@", @"2"];
+    NSArray *subarray = [_sut filteredArrayUsingPredicateWithFormat:@"SELF == %@", @"2"];
     NSArray *expected = @[@"2"];
     
     assertThat(subarray, is(expected));
@@ -98,7 +181,7 @@
 // -------------------------------------------------------------------------------
 
 - (void) testSubarrayWithNilPredicate {
-    NSArray *subarray = [_array filteredArrayUsingPredicateWithFormat:nil];
+    NSArray *subarray = [_sut filteredArrayUsingPredicateWithFormat:nil];
     
     assertThat(subarray, nilValue());
 }

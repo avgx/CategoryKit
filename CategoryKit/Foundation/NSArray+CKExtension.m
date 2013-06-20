@@ -78,7 +78,7 @@
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
     for (int i = 0; i < index; i++) {
-        if (i >= [self count]) {
+        if (i == [self count]) {
             break;
         }
         
@@ -94,10 +94,6 @@
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
     for (int i = index; i < [self count]; i++) {
-        if (i >= [self count]) {
-            break;
-        }
-        
         [result addObject:[self objectAtIndex:i]];
     }
     
