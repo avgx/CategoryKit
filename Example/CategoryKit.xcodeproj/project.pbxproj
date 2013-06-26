@@ -31,6 +31,7 @@
 		0490446A176B6B3A00E97C54 /* UIImage+CKTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490444D176B6B3A00E97C54 /* UIImage+CKTransform.m */; };
 		0490446B176B6B3A00E97C54 /* UIScreen+CKIsRetina.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904450176B6B3A00E97C54 /* UIScreen+CKIsRetina.m */; };
 		0490446C176B6B3A00E97C54 /* UIView+CKFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904452176B6B3A00E97C54 /* UIView+CKFrame.m */; };
+		049525281777167B00C4A7A5 /* NSString+CKFlippedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049525271777167B00C4A7A5 /* NSString+CKFlippedTests.m */; };
 		63396F2A1771822800D0D233 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63396F291771822800D0D233 /* SenTestingKit.framework */; };
 		63396F2B1771822800D0D233 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41984176B585D00DED019 /* UIKit.framework */; };
 		63396F2C1771822800D0D233 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41986176B585D00DED019 /* Foundation.framework */; };
@@ -129,6 +130,7 @@
 		04904450176B6B3A00E97C54 /* UIScreen+CKIsRetina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CKIsRetina.m"; sourceTree = "<group>"; };
 		04904451176B6B3A00E97C54 /* UIView+CKFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CKFrame.h"; sourceTree = "<group>"; };
 		04904452176B6B3A00E97C54 /* UIView+CKFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CKFrame.m"; sourceTree = "<group>"; };
+		049525271777167B00C4A7A5 /* NSString+CKFlippedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+CKFlippedTests.m"; path = "Test Cases/NSString+CKFlippedTests.m"; sourceTree = "<group>"; };
 		63396F281771822800D0D233 /* TestsCategoryKit.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestsCategoryKit.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63396F291771822800D0D233 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		63396F2F1771822800D0D233 /* TestsCategoryKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestsCategoryKit-Info.plist"; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				9480405417718F2D00BF13B3 /* NSArray+CKExtensionTests.m */,
 				9480405217718F0300BF13B3 /* NSDictionary+CKExtensionTest.m */,
 				9480405E1771AD3C00BF13B3 /* NSDate+CKExtensionTest.m */,
+				049525271777167B00C4A7A5 /* NSString+CKFlippedTests.m */,
 				63396F2E1771822800D0D233 /* Supporting Files */,
 			);
 			path = TestsCategoryKit;
@@ -549,6 +552,7 @@
 				9480405C1771A5A500BF13B3 /* NSNumber+CKHumanizeTest.m in Sources */,
 				9480405F1771AD3C00BF13B3 /* NSDate+CKExtensionTest.m in Sources */,
 				948040601771AD4B00BF13B3 /* NSDate+CKExtension.m in Sources */,
+				049525281777167B00C4A7A5 /* NSString+CKFlippedTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
