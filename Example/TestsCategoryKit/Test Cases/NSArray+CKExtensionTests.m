@@ -102,7 +102,7 @@
 
 - (void) testSubarrayWithRangeLocationGreaterThanOriginalArrayCountShouldReturnEmptyArray {
     NSArray *subarray = [_sut subarrayWithRange:NSMakeRange(4, 1)];
-    assertThat(subarray, is([NSArray array]));
+    assertThat(subarray, is(empty()));
 }
 
 // -------------------------------------------------------------------------------
@@ -123,7 +123,7 @@
 
 - (void) testSubarrayToIndex0ShouldReturnEmptyArray {
     NSArray *subarray = [_sut subarrayToIndex:0];
-    assertThat(subarray, is([NSArray array]));
+    assertThat(subarray, is(empty()));
 }
 
 // -------------------------------------------------------------------------------
@@ -159,14 +159,14 @@
 
 - (void) testSubarrayFromIndexGreatherThenOriginalArrayCountShouldReturnEmptyArray {
     NSArray *subarray = [_sut subarrayFromIndex:4];
-    assertThat(subarray, is([NSArray array]));
+    assertThat(subarray, is(empty()));
 }
                
 // -------------------------------------------------------------------------------
 
 - (void) testSubarrayFromIndexEqualToOriginalArrayCountShouldReturnEmptyArray {
     NSArray *subarray = [_sut subarrayFromIndex:3];
-    assertThat(subarray, is([NSArray array]));
+    assertThat(subarray, is(empty()));
 }
 
 // -------------------------------------------------------------------------------
