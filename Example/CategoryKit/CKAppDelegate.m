@@ -7,9 +7,7 @@
 //
 
 #import "CKAppDelegate.h"
-#import "NSDictionary+CKExtension.h"
-#import "NSNumber+CKHumanize.h"
-#import "NSArray+CKExtension.h"
+#import "CategoryKit.h"
 
 
 @implementation CKAppDelegate

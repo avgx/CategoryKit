@@ -80,7 +80,7 @@
 
 /* Begin PBXFileReference section */
 		04904414176B6B3A00E97C54 /* CategoryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryKit.h; sourceTree = "<group>"; };
-		04904416176B6B3A00E97C54 /* Foundation+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+Extension.h"; sourceTree = "<group>"; };
+		04904416176B6B3A00E97C54 /* Foundation+CKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+CKExtension.h"; sourceTree = "<group>"; };
 		04904417176B6B3A00E97C54 /* NSArray+CKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CKExtension.h"; sourceTree = "<group>"; };
 		04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CKExtension.m"; sourceTree = "<group>"; };
 		0490441A176B6B3A00E97C54 /* NSData+CKAESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CKAESCrypt.h"; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 				04904429176B6B3A00E97C54 /* NSNumber */,
 				0490442C176B6B3A00E97C54 /* NSObject */,
 				04904431176B6B3A00E97C54 /* NSString */,
-				04904416176B6B3A00E97C54 /* Foundation+Extension.h */,
+				04904416176B6B3A00E97C54 /* Foundation+CKExtension.h */,
 				04904417176B6B3A00E97C54 /* NSArray+CKExtension.h */,
 				04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */,
 				04904425176B6B3A00E97C54 /* NSDictionary+CKExtension.h */,

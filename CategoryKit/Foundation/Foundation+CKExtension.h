@@ -37,7 +37,7 @@
 #import "NSString+CKAESCrypt.h"
 
 #import "NSArray+CKExtension.h"
-#import "NSDictionaty+CKExtension.h"
+#import "NSDictionary+CKExtension.h"
 
 #import "NSNumber+CKHumanize.h"
 #import "NSFileManager+CKExtension.h"
