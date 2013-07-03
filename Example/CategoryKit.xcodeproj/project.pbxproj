@@ -38,6 +38,7 @@
 		63396F321771822800D0D233 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63396F301771822800D0D233 /* InfoPlist.strings */; };
 		63396F3B1771825D00D0D233 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63396F3A1771825D00D0D233 /* OCHamcrestIOS.framework */; };
 		63396F3D1771826F00D0D233 /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63396F3C1771826F00D0D233 /* OCMockitoIOS.framework */; };
+		63B7277717844B8D00B54F47 /* NSArray+BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B7277617844B8D00B54F47 /* NSArray+BinarySearch.m */; };
 		948040501771864E00BF13B3 /* NSArray+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */; };
 		9480405317718F0300BF13B3 /* NSDictionary+CKExtensionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9480405217718F0300BF13B3 /* NSDictionary+CKExtensionTest.m */; };
 		9480405517718F2D00BF13B3 /* NSArray+CKExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9480405417718F2D00BF13B3 /* NSArray+CKExtensionTests.m */; };
@@ -138,6 +139,8 @@
 		63396F361771822800D0D233 /* TestsCategoryKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestsCategoryKit-Prefix.pch"; sourceTree = "<group>"; };
 		63396F3A1771825D00D0D233 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		63396F3C1771826F00D0D233 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMockitoIOS.framework; sourceTree = "<group>"; };
+		63B7277517844B8D00B54F47 /* NSArray+BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BinarySearch.h"; sourceTree = "<group>"; };
+		63B7277617844B8D00B54F47 /* NSArray+BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BinarySearch.m"; sourceTree = "<group>"; };
 		9480405217718F0300BF13B3 /* NSDictionary+CKExtensionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+CKExtensionTest.m"; path = "Test Cases/NSDictionary+CKExtensionTest.m"; sourceTree = "<group>"; };
 		9480405417718F2D00BF13B3 /* NSArray+CKExtensionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CKExtensionTests.m"; path = "Test Cases/NSArray+CKExtensionTests.m"; sourceTree = "<group>"; };
 		9480405B1771A5A500BF13B3 /* NSNumber+CKHumanizeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+CKHumanizeTest.m"; path = "Test Cases/NSNumber+CKHumanizeTest.m"; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 		04904415176B6B3A00E97C54 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				63B7277517844B8D00B54F47 /* NSArray+BinarySearch.h */,
+				63B7277617844B8D00B54F47 /* NSArray+BinarySearch.m */,
 				04904419176B6B3A00E97C54 /* NSData */,
 				04904420176B6B3A00E97C54 /* NSDate */,
 				04904429176B6B3A00E97C54 /* NSNumber */,
@@ -586,6 +591,7 @@
 				0490446A176B6B3A00E97C54 /* UIImage+CKTransform.m in Sources */,
 				0490446B176B6B3A00E97C54 /* UIScreen+CKIsRetina.m in Sources */,
 				0490446C176B6B3A00E97C54 /* UIView+CKFrame.m in Sources */,
+				63B7277717844B8D00B54F47 /* NSArray+BinarySearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
