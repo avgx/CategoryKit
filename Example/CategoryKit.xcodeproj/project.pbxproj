@@ -201,14 +201,14 @@
 		04904415176B6B3A00E97C54 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				63B7277517844B8D00B54F47 /* NSArray+BinarySearch.h */,
-				63B7277617844B8D00B54F47 /* NSArray+BinarySearch.m */,
 				04904419176B6B3A00E97C54 /* NSData */,
 				04904420176B6B3A00E97C54 /* NSDate */,
 				04904429176B6B3A00E97C54 /* NSNumber */,
 				0490442C176B6B3A00E97C54 /* NSObject */,
 				04904431176B6B3A00E97C54 /* NSString */,
 				04904416176B6B3A00E97C54 /* Foundation+CKExtension.h */,
+				63B7277517844B8D00B54F47 /* NSArray+BinarySearch.h */,
+				63B7277617844B8D00B54F47 /* NSArray+BinarySearch.m */,
 				04904417176B6B3A00E97C54 /* NSArray+CKExtension.h */,
 				04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */,
 				04904425176B6B3A00E97C54 /* NSDictionary+CKExtension.h */,
