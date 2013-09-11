@@ -120,6 +120,7 @@ typedef enum {
 - (CGFloat) appUsedSpace;
 
 - (NSString *) macaddress;
+- (NSString *) ipaddress;
 
 - (BOOL) hasRetinaDisplay;
 - (UIDeviceFamily) deviceFamily;
