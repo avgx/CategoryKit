@@ -8,6 +8,7 @@
 
 #import "CKAppDelegate.h"
 #import "CategoryKit.h"
+#import "MyObject.h"
 
 
 @implementation CKAppDelegate
@@ -19,15 +20,14 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    
-    NSString *size = [@(12312323) humanSize];
-    NSLog(@"%@",size);
-    
-    
-    NSArray *array = @[@(1), @(2), @(3)];
-    id object = [array firstObject];
-    [array isAllObjectsConformsToProtocol:@protocol(NSCopying)];
-    [array subarrayWithRange:NSMakeRange(0, 1)];
+//    NSString *size = [@(12312323) humanSize];
+//    NSLog(@"%@",size);
+//    
+//    
+//    NSArray *array = @[@(1), @(2), @(3)];
+//    id object = [array firstObject];
+//    [array isAllObjectsConformsToProtocol:@protocol(NSCopying)];
+//    [array subarrayWithRange:NSMakeRange(0, 1)];
     
     return YES;
 }

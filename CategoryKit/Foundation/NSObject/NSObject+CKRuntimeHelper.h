@@ -24,7 +24,12 @@
 
 @interface NSObject (CKRuntimeHelper)
 
++ (void) replaceSelector:(SEL) selector withImplementation:(IMP) implementation;
 + (Class) propertyClassForPropertyName:(NSString *) propertyName ofClass:(Class) klass;
 + (NSArray *) propertyNames:(Class) klass;
+
+- (id) associatedObjectForKey:(NSString *) aKey;
+- (void) setAssociatedObject:(id) anObject forKey:(NSString *) aKey;
+- (void) removeAssociatedObjects;
 
 @end

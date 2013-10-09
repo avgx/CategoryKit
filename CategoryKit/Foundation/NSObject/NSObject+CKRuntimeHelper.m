@@ -23,6 +23,7 @@
 #import "NSObject+CKRuntimeHelper.h"
 #import <objc/runtime.h>
 
+
 static const char *property_getTypeName(objc_property_t property) {
 	const char *attributes = property_getAttributes(property);
 	char buffer[1 + strlen(attributes)];
@@ -38,25 +39,71 @@ static const char *property_getTypeName(objc_property_t property) {
 	return "@";
 }
 
+static NSString * OverrideDescription(id self, SEL _cmd) {
+    NSMutableString *desc = [NSMutableString stringWithFormat:@"<%@: %p> {", NSStringFromClass([self class]), (void *) self];
+    NSArray *allKeys = [[self class] propertyNames:[self class]];
+    for (id key in allKeys) {
+        id value = [self valueForKey:key];
+        NSString *valueDesc = [NSString stringWithFormat:@"\n\t%@ = %@,", key, value];
+        [desc appendString:valueDesc];
+    }
+    return [desc stringByAppendingString:@"\n}"];
+}
+
 
 @implementation NSObject (CKRuntimeHelper)
 
 // -------------------------------------------------------------------------------
 
++ (void) load {
+    SEL selector = @selector(description);
+    [self replaceSelector:selector withImplementation:(IMP) OverrideDescription];
+}
+
+// -------------------------------------------------------------------------------
+
++ (void) replaceSelector:(SEL) selector withImplementation:(IMP) implementation {
+    Method origMethod = class_getInstanceMethod(self, selector);
+    if (!class_addMethod(self, selector, implementation, method_getTypeEncoding(origMethod))) {
+        method_setImplementation(origMethod, implementation);
+    }
+}
+
+// -------------------------------------------------------------------------------
+
 + (NSArray *) propertyNames:(Class) klass {
 	NSMutableArray *propertyNames = [[NSMutableArray alloc] init];
-	unsigned int propertyCount = 0;
-	objc_property_t *properties = class_copyPropertyList(klass, &propertyCount);
-	
-	for (unsigned int i = 0; i < propertyCount; ++i) {
-		objc_property_t property = properties[i];
-		const char * name = property_getName(property);
-		
-		[propertyNames addObject:[NSString stringWithUTF8String:name]];
-	}
-	free(properties);
-	
-	return propertyNames;
+    [[self class] classPropsForClassHierarchy:klass onArray:propertyNames];
+    return propertyNames;
+}
+
+// -------------------------------------------------------------------------------
+
++ (NSArray *) classPropsForClassHierarchy:(Class)klass onArray:(NSMutableArray *)results {
+    if (klass == NULL) {
+        return nil;
+    }
+    
+    //stop if we reach the NSObject class as is the base class
+    if (klass == [NSObject class]) {
+        return [NSArray arrayWithArray:results];
+    }
+    else{
+        
+        unsigned int outCount, i;
+        objc_property_t *properties = class_copyPropertyList(klass, &outCount);
+        for (i = 0; i < outCount; i++) {
+            objc_property_t property = properties[i];
+            const char *propName = property_getName(property);
+            if(propName) {
+                NSString *propertyName = @(propName);
+                [results addObject:propertyName];
+            }
+        }
+        free(properties);
+        
+        return [[self class] classPropsForClassHierarchy:[klass superclass] onArray:results];
+    }
 }
 
 // -------------------------------------------------------------------------------
@@ -73,13 +120,31 @@ static const char *property_getTypeName(objc_property_t property) {
         
 		if (strcmp(cPropertyName, name) == 0) {
 			free(properties);
-			NSString *className = [NSString stringWithUTF8String:property_getTypeName(property)];
+			NSString *className = @(property_getTypeName(property));
 			return NSClassFromString(className);
 		}
 	}
     
 	free(properties);
 	return nil;
+}
+
+// -------------------------------------------------------------------------------
+
+- (id) associatedObjectForKey:(NSString *) aKey {
+    return objc_getAssociatedObject(self, (__bridge const void *) (aKey));
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) setAssociatedObject:(id) anObject forKey:(NSString *) aKey {
+    objc_setAssociatedObject(self, (__bridge const void *) (aKey), anObject, OBJC_ASSOCIATION_RETAIN);
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) removeAssociatedObjects {
+    objc_removeAssociatedObjects(self);
 }
 
 // -------------------------------------------------------------------------------
