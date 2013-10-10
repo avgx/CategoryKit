@@ -1,6 +1,5 @@
 CategoryKit
 ===========
-(.)(.)
 
 License
 ==========
