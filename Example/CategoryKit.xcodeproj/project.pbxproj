@@ -482,8 +482,6 @@
 				63396F231771822800D0D233 /* Sources */,
 				63396F241771822800D0D233 /* Frameworks */,
 				63396F251771822800D0D233 /* Resources */,
-				63396F261771822800D0D233 /* ShellScript */,
-				94A7A6771772EDBC00F8298D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -560,35 +558,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		63396F261771822800D0D233 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		94A7A6771772EDBC00F8298D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = XcodeCoverage/exportenv.sh;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63396F231771822800D0D233 /* Sources */ = {
