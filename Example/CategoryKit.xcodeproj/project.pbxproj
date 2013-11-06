@@ -28,24 +28,14 @@
 		04904467176B6B3A00E97C54 /* UIColor+CKEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904447176B6B3A00E97C54 /* UIColor+CKEqual.m */; };
 		04904468176B6B3A00E97C54 /* UIColor+CKExpanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904449176B6B3A00E97C54 /* UIColor+CKExpanded.m */; };
 		04904469176B6B3A00E97C54 /* UIDevice+CKHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490444B176B6B3A00E97C54 /* UIDevice+CKHardware.m */; };
-		0490446A176B6B3A00E97C54 /* UIImage+CKTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490444D176B6B3A00E97C54 /* UIImage+CKTransform.m */; };
 		0490446B176B6B3A00E97C54 /* UIScreen+CKIsRetina.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904450176B6B3A00E97C54 /* UIScreen+CKIsRetina.m */; };
 		0490446C176B6B3A00E97C54 /* UIView+CKFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904452176B6B3A00E97C54 /* UIView+CKFrame.m */; };
 		049525281777167B00C4A7A5 /* NSString+CKFlippedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049525271777167B00C4A7A5 /* NSString+CKFlippedTests.m */; };
-		630518A617E04D9800AC3279 /* UIImage+Masking.m in Sources */ = {isa = PBXBuildFile; fileRef = 630518A517E04D9800AC3279 /* UIImage+Masking.m */; };
 		630518AA17E04E7F00AC3279 /* NYXImagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 630518A917E04E7F00AC3279 /* NYXImagesHelper.m */; };
 		630518AC17E04ED400AC3279 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630518AB17E04ED400AC3279 /* CoreImage.framework */; };
 		630518AE17E04EF500AC3279 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630518AD17E04EF500AC3279 /* QuartzCore.framework */; };
 		630518AF17E04FA900AC3279 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630518AD17E04EF500AC3279 /* QuartzCore.framework */; };
 		630518B017E04FB900AC3279 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630518AB17E04ED400AC3279 /* CoreImage.framework */; };
-		632B9F4A180574D9009F33B6 /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B9F3A180574D9009F33B6 /* AlphaInputValidator.m */; };
-		632B9F4C180574D9009F33B6 /* EmailInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B9F3F180574D9009F33B6 /* EmailInputValidator.m */; };
-		632B9F4D180574D9009F33B6 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B9F41180574D9009F33B6 /* InputValidator.m */; };
-		632B9F4E180574D9009F33B6 /* NumericInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B9F44180574D9009F33B6 /* NumericInputValidator.m */; };
-		632B9F4F180574D9009F33B6 /* RegularExpressionInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B9F46180574D9009F33B6 /* RegularExpressionInputValidator.m */; };
-		632B9F50180574D9009F33B6 /* RequiredInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B9F48180574D9009F33B6 /* RequiredInputValidator.m */; };
-		632B9F5618057551009F33B6 /* UITextField+InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B9F5518057551009F33B6 /* UITextField+InputValidator.m */; };
-		632B9F5918057B20009F33B6 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 632B9F5818057B20009F33B6 /* MyObject.m */; };
 		63396F2A1771822800D0D233 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63396F291771822800D0D233 /* SenTestingKit.framework */; };
 		63396F2B1771822800D0D233 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41984176B585D00DED019 /* UIKit.framework */; };
 		63396F2C1771822800D0D233 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41986176B585D00DED019 /* Foundation.framework */; };
@@ -53,6 +43,10 @@
 		63396F3B1771825D00D0D233 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63396F3A1771825D00D0D233 /* OCHamcrestIOS.framework */; };
 		63396F3D1771826F00D0D233 /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63396F3C1771826F00D0D233 /* OCMockitoIOS.framework */; };
 		63B7277717844B8D00B54F47 /* NSArray+BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B7277617844B8D00B54F47 /* NSArray+BinarySearch.m */; };
+		8014DCCD182A262E0084F0B9 /* UIImage+CKMasking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8014DCCA182A262E0084F0B9 /* UIImage+CKMasking.m */; };
+		8014DCCE182A262E0084F0B9 /* UIImage+CKMasking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8014DCCA182A262E0084F0B9 /* UIImage+CKMasking.m */; };
+		8014DCCF182A262E0084F0B9 /* UIImage+CKTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 8014DCCC182A262E0084F0B9 /* UIImage+CKTransform.m */; };
+		8014DCD0182A262E0084F0B9 /* UIImage+CKTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 8014DCCC182A262E0084F0B9 /* UIImage+CKTransform.m */; };
 		948040501771864E00BF13B3 /* NSArray+CKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904418176B6B3A00E97C54 /* NSArray+CKExtension.m */; };
 		9480405317718F0300BF13B3 /* NSDictionary+CKExtensionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9480405217718F0300BF13B3 /* NSDictionary+CKExtensionTest.m */; };
 		9480405517718F2D00BF13B3 /* NSArray+CKExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9480405417718F2D00BF13B3 /* NSArray+CKExtensionTests.m */; };
@@ -78,7 +72,6 @@
 		94A7A6861772EF1C00F8298D /* UIColor+CKEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904447176B6B3A00E97C54 /* UIColor+CKEqual.m */; };
 		94A7A6871772EF1C00F8298D /* UIColor+CKExpanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904449176B6B3A00E97C54 /* UIColor+CKExpanded.m */; };
 		94A7A6881772EF1C00F8298D /* UIDevice+CKHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490444B176B6B3A00E97C54 /* UIDevice+CKHardware.m */; };
-		94A7A6891772EF1C00F8298D /* UIImage+CKTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490444D176B6B3A00E97C54 /* UIImage+CKTransform.m */; };
 		94A7A68A1772EF1C00F8298D /* UIScreen+CKIsRetina.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904450176B6B3A00E97C54 /* UIScreen+CKIsRetina.m */; };
 		94A7A68B1772EF1C00F8298D /* UIView+CKFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904452176B6B3A00E97C54 /* UIView+CKFrame.m */; };
 		94A7A68C1772EF3C00F8298D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D41988176B585D00DED019 /* CoreGraphics.framework */; };
@@ -138,37 +131,16 @@
 		04904449176B6B3A00E97C54 /* UIColor+CKExpanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CKExpanded.m"; sourceTree = "<group>"; };
 		0490444A176B6B3A00E97C54 /* UIDevice+CKHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+CKHardware.h"; sourceTree = "<group>"; };
 		0490444B176B6B3A00E97C54 /* UIDevice+CKHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+CKHardware.m"; sourceTree = "<group>"; };
-		0490444C176B6B3A00E97C54 /* UIImage+CKTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CKTransform.h"; sourceTree = "<group>"; };
-		0490444D176B6B3A00E97C54 /* UIImage+CKTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CKTransform.m"; sourceTree = "<group>"; };
 		0490444E176B6B3A00E97C54 /* UIKit+CKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+CKExtension.h"; sourceTree = "<group>"; };
 		0490444F176B6B3A00E97C54 /* UIScreen+CKIsRetina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CKIsRetina.h"; sourceTree = "<group>"; };
 		04904450176B6B3A00E97C54 /* UIScreen+CKIsRetina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CKIsRetina.m"; sourceTree = "<group>"; };
 		04904451176B6B3A00E97C54 /* UIView+CKFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CKFrame.h"; sourceTree = "<group>"; };
 		04904452176B6B3A00E97C54 /* UIView+CKFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CKFrame.m"; sourceTree = "<group>"; };
 		049525271777167B00C4A7A5 /* NSString+CKFlippedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+CKFlippedTests.m"; path = "Test Cases/NSString+CKFlippedTests.m"; sourceTree = "<group>"; };
-		630518A417E04D9800AC3279 /* UIImage+Masking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Masking.h"; sourceTree = "<group>"; };
-		630518A517E04D9800AC3279 /* UIImage+Masking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Masking.m"; sourceTree = "<group>"; };
 		630518A817E04E7F00AC3279 /* NYXImagesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYXImagesHelper.h; sourceTree = "<group>"; };
 		630518A917E04E7F00AC3279 /* NYXImagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYXImagesHelper.m; sourceTree = "<group>"; };
 		630518AB17E04ED400AC3279 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		630518AD17E04EF500AC3279 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		632B9F39180574D9009F33B6 /* AlphaInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaInputValidator.h; sourceTree = "<group>"; };
-		632B9F3A180574D9009F33B6 /* AlphaInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaInputValidator.m; sourceTree = "<group>"; };
-		632B9F3E180574D9009F33B6 /* EmailInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailInputValidator.h; sourceTree = "<group>"; };
-		632B9F3F180574D9009F33B6 /* EmailInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailInputValidator.m; sourceTree = "<group>"; };
-		632B9F40180574D9009F33B6 /* InputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
-		632B9F41180574D9009F33B6 /* InputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
-		632B9F42180574D9009F33B6 /* InputValidatorSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputValidatorSubclass.h; sourceTree = "<group>"; };
-		632B9F43180574D9009F33B6 /* NumericInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericInputValidator.h; sourceTree = "<group>"; };
-		632B9F44180574D9009F33B6 /* NumericInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericInputValidator.m; sourceTree = "<group>"; };
-		632B9F45180574D9009F33B6 /* RegularExpressionInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularExpressionInputValidator.h; sourceTree = "<group>"; };
-		632B9F46180574D9009F33B6 /* RegularExpressionInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularExpressionInputValidator.m; sourceTree = "<group>"; };
-		632B9F47180574D9009F33B6 /* RequiredInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequiredInputValidator.h; sourceTree = "<group>"; };
-		632B9F48180574D9009F33B6 /* RequiredInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequiredInputValidator.m; sourceTree = "<group>"; };
-		632B9F5418057551009F33B6 /* UITextField+InputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+InputValidator.h"; sourceTree = "<group>"; };
-		632B9F5518057551009F33B6 /* UITextField+InputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+InputValidator.m"; sourceTree = "<group>"; };
-		632B9F5718057B20009F33B6 /* MyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
-		632B9F5818057B20009F33B6 /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
 		63396F281771822800D0D233 /* TestsCategoryKit.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestsCategoryKit.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63396F291771822800D0D233 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		63396F2F1771822800D0D233 /* TestsCategoryKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestsCategoryKit-Info.plist"; sourceTree = "<group>"; };
@@ -178,6 +150,10 @@
 		63396F3C1771826F00D0D233 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMockitoIOS.framework; sourceTree = "<group>"; };
 		63B7277517844B8D00B54F47 /* NSArray+BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BinarySearch.h"; sourceTree = "<group>"; };
 		63B7277617844B8D00B54F47 /* NSArray+BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BinarySearch.m"; sourceTree = "<group>"; };
+		8014DCC9182A262E0084F0B9 /* UIImage+CKMasking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CKMasking.h"; sourceTree = "<group>"; };
+		8014DCCA182A262E0084F0B9 /* UIImage+CKMasking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CKMasking.m"; sourceTree = "<group>"; };
+		8014DCCB182A262E0084F0B9 /* UIImage+CKTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CKTransform.h"; sourceTree = "<group>"; };
+		8014DCCC182A262E0084F0B9 /* UIImage+CKTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CKTransform.m"; sourceTree = "<group>"; };
 		9480405217718F0300BF13B3 /* NSDictionary+CKExtensionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+CKExtensionTest.m"; path = "Test Cases/NSDictionary+CKExtensionTest.m"; sourceTree = "<group>"; };
 		9480405417718F2D00BF13B3 /* NSArray+CKExtensionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CKExtensionTests.m"; path = "Test Cases/NSArray+CKExtensionTests.m"; sourceTree = "<group>"; };
 		9480405B1771A5A500BF13B3 /* NSNumber+CKHumanizeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+CKHumanizeTest.m"; path = "Test Cases/NSNumber+CKHumanizeTest.m"; sourceTree = "<group>"; };
@@ -329,14 +305,10 @@
 		04904444176B6B3A00E97C54 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				632B9F38180574D9009F33B6 /* ValidatedTextField */,
+				8014DCC8182A262E0084F0B9 /* UIImage */,
 				04904445176B6B3A00E97C54 /* UIColor */,
-				630518A417E04D9800AC3279 /* UIImage+Masking.h */,
-				630518A517E04D9800AC3279 /* UIImage+Masking.m */,
 				0490444A176B6B3A00E97C54 /* UIDevice+CKHardware.h */,
 				0490444B176B6B3A00E97C54 /* UIDevice+CKHardware.m */,
-				0490444C176B6B3A00E97C54 /* UIImage+CKTransform.h */,
-				0490444D176B6B3A00E97C54 /* UIImage+CKTransform.m */,
 				0490444E176B6B3A00E97C54 /* UIKit+CKExtension.h */,
 				0490444F176B6B3A00E97C54 /* UIScreen+CKIsRetina.h */,
 				04904450176B6B3A00E97C54 /* UIScreen+CKIsRetina.m */,
@@ -366,28 +338,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		632B9F38180574D9009F33B6 /* ValidatedTextField */ = {
-			isa = PBXGroup;
-			children = (
-				632B9F5418057551009F33B6 /* UITextField+InputValidator.h */,
-				632B9F5518057551009F33B6 /* UITextField+InputValidator.m */,
-				632B9F39180574D9009F33B6 /* AlphaInputValidator.h */,
-				632B9F3A180574D9009F33B6 /* AlphaInputValidator.m */,
-				632B9F3E180574D9009F33B6 /* EmailInputValidator.h */,
-				632B9F3F180574D9009F33B6 /* EmailInputValidator.m */,
-				632B9F40180574D9009F33B6 /* InputValidator.h */,
-				632B9F41180574D9009F33B6 /* InputValidator.m */,
-				632B9F42180574D9009F33B6 /* InputValidatorSubclass.h */,
-				632B9F43180574D9009F33B6 /* NumericInputValidator.h */,
-				632B9F44180574D9009F33B6 /* NumericInputValidator.m */,
-				632B9F45180574D9009F33B6 /* RegularExpressionInputValidator.h */,
-				632B9F46180574D9009F33B6 /* RegularExpressionInputValidator.m */,
-				632B9F47180574D9009F33B6 /* RequiredInputValidator.h */,
-				632B9F48180574D9009F33B6 /* RequiredInputValidator.m */,
-			);
-			path = ValidatedTextField;
-			sourceTree = "<group>";
-		};
 		63396F2D1771822800D0D233 /* TestsCategoryKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +359,17 @@
 				63396F361771822800D0D233 /* TestsCategoryKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8014DCC8182A262E0084F0B9 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				8014DCC9182A262E0084F0B9 /* UIImage+CKMasking.h */,
+				8014DCCA182A262E0084F0B9 /* UIImage+CKMasking.m */,
+				8014DCCB182A262E0084F0B9 /* UIImage+CKTransform.h */,
+				8014DCCC182A262E0084F0B9 /* UIImage+CKTransform.m */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 		94D41978176B585D00DED019 = {
@@ -451,8 +412,6 @@
 				04904413176B6B3A00E97C54 /* CategoryKit */,
 				94D41993176B585D00DED019 /* CKAppDelegate.h */,
 				94D41994176B585D00DED019 /* CKAppDelegate.m */,
-				632B9F5718057B20009F33B6 /* MyObject.h */,
-				632B9F5818057B20009F33B6 /* MyObject.m */,
 				94D4198B176B585D00DED019 /* Supporting Files */,
 			);
 			path = CategoryKit;
@@ -581,16 +540,17 @@
 				94A7A6861772EF1C00F8298D /* UIColor+CKEqual.m in Sources */,
 				94A7A6871772EF1C00F8298D /* UIColor+CKExpanded.m in Sources */,
 				94A7A6881772EF1C00F8298D /* UIDevice+CKHardware.m in Sources */,
-				94A7A6891772EF1C00F8298D /* UIImage+CKTransform.m in Sources */,
 				94A7A68A1772EF1C00F8298D /* UIScreen+CKIsRetina.m in Sources */,
 				94A7A68B1772EF1C00F8298D /* UIView+CKFrame.m in Sources */,
 				948040501771864E00BF13B3 /* NSArray+CKExtension.m in Sources */,
 				9480405317718F0300BF13B3 /* NSDictionary+CKExtensionTest.m in Sources */,
 				9480405517718F2D00BF13B3 /* NSArray+CKExtensionTests.m in Sources */,
+				8014DCD0182A262E0084F0B9 /* UIImage+CKTransform.m in Sources */,
 				948040561771914300BF13B3 /* NSDictionary+CKExtension.m in Sources */,
 				9480405A17719C2C00BF13B3 /* NSNumber+CKHumanize.m in Sources */,
 				9480405C1771A5A500BF13B3 /* NSNumber+CKHumanizeTest.m in Sources */,
 				9480405F1771AD3C00BF13B3 /* NSDate+CKExtensionTest.m in Sources */,
+				8014DCCE182A262E0084F0B9 /* UIImage+CKMasking.m in Sources */,
 				948040601771AD4B00BF13B3 /* NSDate+CKExtension.m in Sources */,
 				049525281777167B00C4A7A5 /* NSString+CKFlippedTests.m in Sources */,
 			);
@@ -601,23 +561,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D41991176B585D00DED019 /* main.m in Sources */,
-				632B9F4E180574D9009F33B6 /* NumericInputValidator.m in Sources */,
-				632B9F5618057551009F33B6 /* UITextField+InputValidator.m in Sources */,
 				94D41995176B585D00DED019 /* CKAppDelegate.m in Sources */,
 				04904453176B6B3A00E97C54 /* NSArray+CKExtension.m in Sources */,
-				632B9F4C180574D9009F33B6 /* EmailInputValidator.m in Sources */,
 				04904454176B6B3A00E97C54 /* NSData+CKAESCrypt.m in Sources */,
 				04904455176B6B3A00E97C54 /* NSData+CKJSON.m in Sources */,
 				04904457176B6B3A00E97C54 /* NSDate+CKExtension.m in Sources */,
 				04904458176B6B3A00E97C54 /* NSDate+CKNetConversion.m in Sources */,
-				632B9F4D180574D9009F33B6 /* InputValidator.m in Sources */,
 				04904459176B6B3A00E97C54 /* NSDictionary+CKExtension.m in Sources */,
 				0490445A176B6B3A00E97C54 /* NSFileManager+CKExtension.m in Sources */,
-				632B9F4A180574D9009F33B6 /* AlphaInputValidator.m in Sources */,
 				0490445B176B6B3A00E97C54 /* NSNumber+CKHumanize.m in Sources */,
-				632B9F5918057B20009F33B6 /* MyObject.m in Sources */,
 				630518AA17E04E7F00AC3279 /* NYXImagesHelper.m in Sources */,
-				632B9F4F180574D9009F33B6 /* RegularExpressionInputValidator.m in Sources */,
 				0490445C176B6B3A00E97C54 /* NSObject+CKBlocks.m in Sources */,
 				0490445D176B6B3A00E97C54 /* NSObject+CKRuntimeHelper.m in Sources */,
 				0490445E176B6B3A00E97C54 /* NSString+CKAESCrypt.m in Sources */,
@@ -626,15 +579,14 @@
 				04904462176B6B3A00E97C54 /* NSString+CKReversed.m in Sources */,
 				04904463176B6B3A00E97C54 /* NSString+CKTimeInterval.m in Sources */,
 				04904464176B6B3A00E97C54 /* NSString+CKSHA256.m in Sources */,
-				632B9F50180574D9009F33B6 /* RequiredInputValidator.m in Sources */,
-				630518A617E04D9800AC3279 /* UIImage+Masking.m in Sources */,
 				04904465176B6B3A00E97C54 /* NSTimer+CKBlocks.m in Sources */,
 				04904466176B6B3A00E97C54 /* NSURLConnection+CKBlocks.m in Sources */,
+				8014DCCF182A262E0084F0B9 /* UIImage+CKTransform.m in Sources */,
 				04904467176B6B3A00E97C54 /* UIColor+CKEqual.m in Sources */,
 				04904468176B6B3A00E97C54 /* UIColor+CKExpanded.m in Sources */,
 				04904469176B6B3A00E97C54 /* UIDevice+CKHardware.m in Sources */,
-				0490446A176B6B3A00E97C54 /* UIImage+CKTransform.m in Sources */,
 				0490446B176B6B3A00E97C54 /* UIScreen+CKIsRetina.m in Sources */,
+				8014DCCD182A262E0084F0B9 /* UIImage+CKMasking.m in Sources */,
 				0490446C176B6B3A00E97C54 /* UIView+CKFrame.m in Sources */,
 				63B7277717844B8D00B54F47 /* NSArray+BinarySearch.m in Sources */,
 			);

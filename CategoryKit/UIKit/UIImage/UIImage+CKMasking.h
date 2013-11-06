@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2013 Lisovoy Ivan, Denis Kotenko, Yaroslav Bulda
+// Copyright (c) 2013 @Nyx0uf
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -20,15 +20,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#import "NYXImagesHelper.h"
 
-#import "UIColor+CKEqual.h"
-#import "UIColor+CKExpanded.h"
+@interface UIImage (CKMasking)
 
-#import "UIView+CKFrame.h"
+- (UIImage *) maskWithImage:(UIImage *) mask;
 
-#import "UIScreen+CKIsRetina.h"
-
-#import "UIImage+CKTransform.h"
-#import "UIImage+CKMasking.h"
-
-#import "UIDevice+CKHardware.h"
+@end
