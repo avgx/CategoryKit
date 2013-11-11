@@ -331,10 +331,10 @@
 			children = (
 				632B9F38180574D9009F33B6 /* ValidatedTextField */,
 				04904445176B6B3A00E97C54 /* UIColor */,
-				630518A417E04D9800AC3279 /* UIImage+Masking.h */,
-				630518A517E04D9800AC3279 /* UIImage+Masking.m */,
 				0490444A176B6B3A00E97C54 /* UIDevice+CKHardware.h */,
 				0490444B176B6B3A00E97C54 /* UIDevice+CKHardware.m */,
+				630518A417E04D9800AC3279 /* UIImage+Masking.h */,
+				630518A517E04D9800AC3279 /* UIImage+Masking.m */,
 				0490444C176B6B3A00E97C54 /* UIImage+CKTransform.h */,
 				0490444D176B6B3A00E97C54 /* UIImage+CKTransform.m */,
 				0490444E176B6B3A00E97C54 /* UIKit+CKExtension.h */,

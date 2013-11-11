@@ -24,6 +24,10 @@
 #import <objc/runtime.h>
 
 
+NSString *const NSObjectWillChangeNotification = @"NSObjectWillChangeNotification";
+NSString *const NSObjectDidChangeNotification  = @"NSObjectDidChangeNotification";
+
+
 static const char *property_getTypeName(objc_property_t property) {
 	const char *attributes = property_getAttributes(property);
 	char buffer[1 + strlen(attributes)];
@@ -145,6 +149,20 @@ static NSString * OverrideDescription(id self, SEL _cmd) {
 
 - (void) removeAssociatedObjects {
     objc_removeAssociatedObjects(self);
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) objectWillChange {
+    [[NSNotificationCenter defaultCenter]
+        postNotificationName:NSObjectWillChangeNotification object:self userInfo:nil];
+}
+
+// -------------------------------------------------------------------------------
+
+- (void) objectDidChange {
+    [[NSNotificationCenter defaultCenter]
+        postNotificationName:NSObjectDidChangeNotification object:self userInfo:nil];
 }
 
 // -------------------------------------------------------------------------------

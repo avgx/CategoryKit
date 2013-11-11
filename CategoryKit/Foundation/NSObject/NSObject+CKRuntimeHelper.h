@@ -22,6 +22,11 @@
 
 #import <Foundation/Foundation.h>
 
+
+extern NSString *const NSObjectWillChangeNotification;
+extern NSString *const NSObjectDidChangeNotification;
+
+
 @interface NSObject (CKRuntimeHelper)
 
 + (void) replaceSelector:(SEL) selector withImplementation:(IMP) implementation;
@@ -31,5 +36,8 @@
 - (id) associatedObjectForKey:(NSString *) aKey;
 - (void) setAssociatedObject:(id) anObject forKey:(NSString *) aKey;
 - (void) removeAssociatedObjects;
+
+- (void) objectWillChange;
+- (void) objectDidChange;
 
 @end
